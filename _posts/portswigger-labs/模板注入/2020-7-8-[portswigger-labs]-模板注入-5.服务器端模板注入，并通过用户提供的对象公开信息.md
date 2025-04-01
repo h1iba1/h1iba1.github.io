@@ -21,7 +21,7 @@
 payload:
 
 ```javascript
-{% debug %}
+{`%` debug %}
 ```
 
 输出将包含可以在此模板内访问的对象和属性的列表
