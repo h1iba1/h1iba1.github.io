@@ -1,16 +1,18 @@
-title: Hacker-Blog
+title: h11ba1's blog
+SEOTitle: h11ba1's blog
 description: "A Jekyll Blog Theme For Hackers"
+keyword: "h11ba1, 安全, 网络安全, 代码审计" #关键词
 author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
+  name: "h11ba1"
+  email: "h11ba1@qq.com"
+  url: "https://h1iba1.github.io/"
 
 baseurl: /
 
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 3
+paginate: 10
 paginate_path: /page/:num/
 
 defaults:
@@ -28,5 +30,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "SomeHacker"
+owner : "h11ba1"
 year : "2020"
