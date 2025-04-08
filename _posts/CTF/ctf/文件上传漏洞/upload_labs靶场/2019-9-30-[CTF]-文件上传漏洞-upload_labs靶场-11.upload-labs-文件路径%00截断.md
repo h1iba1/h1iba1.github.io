@@ -1,10 +1,10 @@
 直接上传phpinfo.php,提示只能上传jpg,png,gif文件。
 
-![](images/AC657A20E20D4D46B962E32BA4387C51clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/AC657A20E20D4D46B962E32BA4387C51clipboard.png)
 
 修改文件后缀为jpg。上传成功。查看上传文件路径，发现更改了文件名，且文件名后缀只能为图形格式，无法利用。
 
-![](images/87408F3683474EF3B8EA43AF67D0E608clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/87408F3683474EF3B8EA43AF67D0E608clipboard.png)
 
 
 
@@ -24,13 +24,13 @@ save_path为url中获取到的路径。
 
 
 
-![](images/3E060FAD80584AC7911C436DB39936B8clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/3E060FAD80584AC7911C436DB39936B8clipboard.png)
 
 
 
 文件上传成功，但是heibai.php后面的参数都已被截断。直接访问heibai,php。漏洞利用成功。
 
-![](images/40ACD57856B44445BB9D2CEEA442FE63clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/40ACD57856B44445BB9D2CEEA442FE63clipboard.png)
 
 
 

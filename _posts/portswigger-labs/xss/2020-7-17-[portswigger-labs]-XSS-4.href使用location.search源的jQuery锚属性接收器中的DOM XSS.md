@@ -12,7 +12,7 @@ payload:
 
 此时页面中出现的url中输入的参数
 
-![](images/A0BDBFFD81894F4F95BD0B1F4313BDB4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/A0BDBFFD81894F4F95BD0B1F4313BDB4clipboard.png)
 
 点击即可触发弹框。
 

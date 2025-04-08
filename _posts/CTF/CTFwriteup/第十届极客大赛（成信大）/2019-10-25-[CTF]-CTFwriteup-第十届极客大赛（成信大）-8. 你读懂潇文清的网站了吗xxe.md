@@ -11,7 +11,7 @@
 <name>&hacker;</name>
 ```
 
-![image](images/EC4F0B61A5404B41A62FBDE825439E6E你读懂萧文清的网站了吗1.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/EC4F0B61A5404B41A62FBDE825439E6E你读懂萧文清的网站了吗1.png)
 
 可能是返回文件中的的特殊符号（例如<),无法被xml解析
 
@@ -23,7 +23,7 @@
 <name>&hacker;</name>
 ```
 
-![image](images/5A9797FA043C45CDA3C429CE001553C0你读懂萧文清的网站了吗2.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/5A9797FA043C45CDA3C429CE001553C0你读懂萧文清的网站了吗2.png)
 
 ### 2.解码之后得到index.php文件内容：
 
@@ -199,11 +199,11 @@ $phar->stopBuffering();
 ```
 
 ### 4.上传文件
-![image](images/61DCE294978D4778B1F8B70904DD569D你读懂萧文清的网站了吗3.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/61DCE294978D4778B1F8B70904DD569D你读懂萧文清的网站了吗3.png)
 
 xxe触发序列化：
 
-![image](images/54EC0B7ED6B14A568120EAE1215DF136你读懂萧文清的网站了吗4.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/54EC0B7ED6B14A568120EAE1215DF136你读懂萧文清的网站了吗4.png)
 
 解码即可得到flag：
-![image](images/497AC547586C49748158C37964CDFD45你读懂萧文清的网站了吗5.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/497AC547586C49748158C37964CDFD45你读懂萧文清的网站了吗5.png)

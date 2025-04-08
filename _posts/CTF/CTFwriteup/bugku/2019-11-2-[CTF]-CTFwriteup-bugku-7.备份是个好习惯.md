@@ -65,7 +65,7 @@ parse_str($str);
 
 
 
-![](images/02549563800848639345352FBEB69AF0clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/bugku/images/02549563800848639345352FBEB69AF0clipboard.png)
 
 
 

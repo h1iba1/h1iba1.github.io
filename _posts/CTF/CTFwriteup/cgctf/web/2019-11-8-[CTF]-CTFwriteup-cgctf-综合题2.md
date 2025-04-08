@@ -6,7 +6,7 @@
 
 ## 2.仔细阅读页面，发现一句类似提示的东西
 
-![](images/AEF28CB38E894752B79273C14001664Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/AEF28CB38E894752B79273C14001664Cclipboard.png)
 
 可能需要我们拿到shell，并且登陆到后台就知道了
 
@@ -18,11 +18,11 @@ view-source:http://cms.nuptzj.cn/about.php?file=sm.txt
 
 打开看到sm.txt的内容，内容暴露了admin表结构，后面可能需要sql注入
 
-![](images/785E941FD86C443D97D519B7204FCD6Aclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/785E941FD86C443D97D519B7204FCD6Aclipboard.png)
 
 还暴露了，后台文件：
 
-![](images/A06285B0E17243B7A2B15881C0871C9Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/A06285B0E17243B7A2B15881C0871C9Eclipboard.png)
 
 
 
@@ -52,7 +52,7 @@ payload:http://cms.nuptzj.cn/about.php?file=php://filter/read=convert.base64-enc
 
 读出about.php的源码，
 
-![](images/45DAA21C179248EAB549918C68C565B6clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/45DAA21C179248EAB549918C68C565B6clipboard.png)
 
 发现对config.php和loginxlcteam做了限制，loginxlcteam文件提示，敏感目录，禁止查看！但是...也许可以访问。
 
@@ -62,7 +62,7 @@ payload:http://cms.nuptzj.cn/about.php?file=php://filter/read=convert.base64-enc
 
 http://cms.nuptzj.cn/loginxlcteam/
 
-![](images/73831B36C78347DCB265860667CD6497clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/73831B36C78347DCB265860667CD6497clipboard.png)
 
 看到后台页面，但是需要登陆，结合前面的表结构，可能需要注入，但是多次尝试也没有注入成功。
 
@@ -70,19 +70,19 @@ http://cms.nuptzj.cn/loginxlcteam/
 
 在这里卡了好一会儿，最后看了一下wp，发现index页面的搜索框还没有查看.......
 
-![](images/3E8ED940966A429B9FC816057A061F26clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/3E8ED940966A429B9FC816057A061F26clipboard.png)
 
 
 
 ## 6.读出so.php文件源码
 
-![](images/354AE68141534AADA90A69A2C2A5F04Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/354AE68141534AADA90A69A2C2A5F04Fclipboard.png)
 
 文件还限制了，必须使用Xlcteam Browser浏览器，此时只需将bp的http头改为：
 
 User-Agent: Xlcteam Browser即可
 
-![](images/252CB267DB9948C7890840CC18E5C922clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/252CB267DB9948C7890840CC18E5C922clipboard.png)
 
 $id可能存在注入，但是经过了antinject.php的过滤，
 
@@ -90,7 +90,7 @@ $id可能存在注入，但是经过了antinject.php的过滤，
 
 ## 7.所以查看antinject.php的源码，
 
-![](images/0D63B0695A3C4A90B2342B6F7D5EB6F7clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/0D63B0695A3C4A90B2342B6F7D5EB6F7clipboard.png)
 
 发现该文件将关键字替换为了空。此处可以采用重写绕过，比如：seselectlect,空格可以使用/**/绕过
 
@@ -118,7 +118,7 @@ payload:soid=1/**/uNunionion/**/seselectlect/**/null,(seselectlect/**/userpapass
 
 返回：
 
-![](images/0DAFD078F87D41E98E516C0B80B9F82Aclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/0DAFD078F87D41E98E516C0B80B9F82Aclipboard.png)
 
 返回的字符，看起来向ascii码。
 
@@ -140,7 +140,7 @@ for($i=0;$i<count($str);$i++){
 
 username=admin&userpass=fuckruntu
 
-![](images/44BC205FDB4F4ADC8D3965C05D447AB4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/44BC205FDB4F4ADC8D3965C05D447AB4clipboard.png)
 
 
 
@@ -166,7 +166,7 @@ array_walk($arr, $e, '');
 
 ## 12.蚁剑：
 
-![](images/33D53ADE699345D6B47EAF54CD822348clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/33D53ADE699345D6B47EAF54CD822348clipboard.png)
 
 
 

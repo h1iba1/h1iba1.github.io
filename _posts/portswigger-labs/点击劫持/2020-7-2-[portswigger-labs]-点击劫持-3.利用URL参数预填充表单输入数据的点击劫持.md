@@ -1,6 +1,6 @@
 修改email界面可以通过url控制输入框的预填充值
 
-![](images/64C7AD97E2DE4D789CDB6C1CEFC3B79Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/点击劫持/images/64C7AD97E2DE4D789CDB6C1CEFC3B79Cclipboard.png)
 
 
 

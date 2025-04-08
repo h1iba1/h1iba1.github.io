@@ -15,15 +15,15 @@ sql注入拿到题目都先尝试各种操作，观察有什么字段被过滤�
 
 1.1 1
 
-![](images/A07C8B31C29A4BCF84A226556BB6DBB6clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/A07C8B31C29A4BCF84A226556BB6DBB6clipboard.png)
 
 1.2 1'
 
-![](images/8B54CEDB94AC4869B59DC282039C4294clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/8B54CEDB94AC4869B59DC282039C4294clipboard.png)
 
 1.3 1'union select null--+
 
-![](images/6C084402800441A9A94E0DE042589391clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6C084402800441A9A94E0DE042589391clipboard.png)
 
 过滤了select和.
 
@@ -35,13 +35,13 @@ sql注入拿到题目都先尝试各种操作，观察有什么字段被过滤�
 
 查询出了数据库名
 
-![](images/872F5B32B7CE47EE81FB508B11665EB5clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/872F5B32B7CE47EE81FB508B11665EB5clipboard.png)
 
 
 
 1.5 1';show tables;#
 
-![](images/2DB1AE9711544365888F76E9CACE42E1clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2DB1AE9711544365888F76E9CACE42E1clipboard.png)
 
 
 
@@ -100,13 +100,13 @@ rename myclass to youclass;
 
 1.9payload之后表名和字段就已经更改了
 
-![](images/4E05DB59700F45A39D61A3CA200DEE3Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/4E05DB59700F45A39D61A3CA200DEE3Bclipboard.png)
 
 
 
 1.10 提交 1‘or'1,查询所有字段内容即可查出答案
 
-![](images/096DC3BF9C674FBE82EF1074527E8D5Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/096DC3BF9C674FBE82EF1074527E8D5Cclipboard.png)
 
 
 

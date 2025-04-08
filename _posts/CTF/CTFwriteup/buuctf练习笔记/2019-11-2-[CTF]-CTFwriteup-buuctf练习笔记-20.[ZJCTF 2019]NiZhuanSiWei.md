@@ -49,7 +49,7 @@ post:
 
 
 
-![](images/0D83B2A12DF4404F8F6E6039D79CF31Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/0D83B2A12DF4404F8F6E6039D79CF31Bclipboard.png)
 
 
 
@@ -72,7 +72,7 @@ post:
 
 
 
-![](images/29F78769B3B1474CB589AFEC56E0A841clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/29F78769B3B1474CB589AFEC56E0A841clipboard.png)
 
 
 
@@ -121,7 +121,7 @@ O:4:"Flag":1:{s:4:"file";s:8:"flag.php";}
 
 # 6.访问即可得到flag
 
-![](images/1049E4E096DE42FE949FDEF773CADA57clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/1049E4E096DE42FE949FDEF773CADA57clipboard.png)
 
 
 

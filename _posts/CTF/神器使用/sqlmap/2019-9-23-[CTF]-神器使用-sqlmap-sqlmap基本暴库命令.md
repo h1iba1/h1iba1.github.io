@@ -19,7 +19,7 @@ sqlmap -u"http://192.168.100.176/vuln/sqli-labs/Less-1/?id=1"
 
 
 
-![](images/4BFF136AB7DB496981B0425376F03845clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/神器使用/sqlmap/images/4BFF136AB7DB496981B0425376F03845clipboard.png)
 
 
 

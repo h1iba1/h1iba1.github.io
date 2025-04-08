@@ -2,6 +2,6 @@
 
 访问phpinfo.php(不用添加空格）
 
-![](images/54045790995E4A2499D85A68DC55B143clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/54045790995E4A2499D85A68DC55B143clipboard.png)
 
 这里和windos的特性有关，windos创建文件时会自动去除末尾的空格。

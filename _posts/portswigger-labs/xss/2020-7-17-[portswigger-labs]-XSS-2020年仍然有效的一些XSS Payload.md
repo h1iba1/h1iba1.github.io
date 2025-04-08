@@ -18,7 +18,7 @@
 
 译文仅供参考，具体内容表达以及含义原文为准
 
-![](images/5702106FCB1D44A3B286B088169FAE96bb46682022c1.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/5702106FCB1D44A3B286B088169FAE96bb46682022c1.png)
 
  
 
@@ -32,7 +32,7 @@
 
 有些过滤器会“天真地认为”只有某些特定字符可以分隔标签及其属性，下面给出的是在Firefox和Chrome中能够使用的有效分隔符的完整列表：
 
-![](images/3AC468AD2BEB420A90C2D60E16855BD7c8b3a305b9ce.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/3AC468AD2BEB420A90C2D60E16855BD7c8b3a305b9ce.png)
 
 使用方式
 
@@ -60,7 +60,7 @@ onload=alert(1)><svg> # new page char (0xc)
 
 点击事件：
 
-![](images/763F19228EBE4ADBB48717B390598DA0be6863a2ab2d.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/763F19228EBE4ADBB48717B390598DA0be6863a2ab2d.png)
 
 使用样例：
 
@@ -86,7 +86,7 @@ HTML5事件
 
 点击事件：
 
-![](images/BEE8EBB850DD41B7BBFF4EE1E2440D1A5017325a2ed1.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/BEE8EBB850DD41B7BBFF4EE1E2440D1A5017325a2ed1.png)
 
 使用样例：
 
@@ -148,7 +148,7 @@ XSS多覆盖样例
 
 下面我给出了几份XSS的多段代码，因为有的时候我们只需要输入特定的字符，或者只需要一个基于DOM或基于非DOM的注入场景。
 
-![](images/7B15543B57CF43EABF3A71EA94CCDD8692acebe1f4f2.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/7B15543B57CF43EABF3A71EA94CCDD8692acebe1f4f2.png)
 
  
 
@@ -227,7 +227,7 @@ mXSS和DOM攻击
 
 有的时候，应用程序会在字符串再次解码之前，对其执行XSS过滤，这样就会给我们留下实现绕过的可乘之机。
 
-![](images/135EF9553425425D820FBFEE574D5244de01a2a7b889.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/135EF9553425425D820FBFEE574D5244de01a2a7b889.png)
 
  
 

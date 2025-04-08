@@ -16,13 +16,13 @@
 
 大体看了一下发现config.php中存在flag
 
-![](images/DA455B9C267F41D29E0912E853592202clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/DA455B9C267F41D29E0912E853592202clipboard.png)
 
 
 
 # 3.seay扫描代码
 
-![](images/4349AF923DCE4D04B15D41A9AC4449FEclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/4349AF923DCE4D04B15D41A9AC4449FEclipboard.png)
 
 
 
@@ -32,7 +32,7 @@ frofile.php可能存在文件读取漏洞可以得到config.php中的flag
 
 # 4.我们只要能控制$peofile['photo']=config.php;即可读取到flag
 
-![](images/A447E3866E904DA2B2BBE5EBADFFF61Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/A447E3866E904DA2B2BBE5EBADFFF61Cclipboard.png)
 
 
 
@@ -110,13 +110,13 @@ public function filter($string) {
 
 
 
-![](images/20C04B2A88054FF59427436AFF788C44clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/20C04B2A88054FF59427436AFF788C44clipboard.png)
 
 
 
 frofile.php中有一个unserlize
 
-![](images/F9E1FF9193104B31953386DD467DC146clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/F9E1FF9193104B31953386DD467DC146clipboard.png)
 
 
 
@@ -130,7 +130,7 @@ frofile.php中有一个unserlize
 
 当反序列化时，会自动忽略能正常序列化字符串后面的字符串
 
-![](images/2AFF690A8CBC45E791E548102DBC6F10clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2AFF690A8CBC45E791E548102DBC6F10clipboard.png)
 
 可以看到ser和ser3的值反序列化后的值是一样的。
 
@@ -140,7 +140,7 @@ frofile.php中有一个unserlize
 
 9.1 自定义nickname的值，虽然nickname有限制但是可以采用数组绕过
 
-![](images/0641482F4CEF4C7B948B106481EEA10Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/0641482F4CEF4C7B948B106481EEA10Fclipboard.png)
 
 
 
@@ -148,7 +148,7 @@ frofile.php中有一个unserlize
 
 9.2 发现filter能够将白名单中的值替换为hacker
 
-![](images/2F3359C800E24819912ED15F98E5ABB5clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2F3359C800E24819912ED15F98E5ABB5clipboard.png)
 
 
 
@@ -162,13 +162,13 @@ where";}s:5:"photo";s:10:"config.php
 
 
 
-![](images/3866BA486C584AE99E08214AE4DEF80Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/3866BA486C584AE99E08214AE4DEF80Eclipboard.png)
 
 
 
 访问profile.php即可得到flagconfig.php的base64编码
 
-![](images/78DC838750E54029965F9E4841F00750clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/78DC838750E54029965F9E4841F00750clipboard.png)
 
 
 

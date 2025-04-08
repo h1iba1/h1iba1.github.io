@@ -1,6 +1,6 @@
 检查库存处抓包，发现xml格式数据
 
-![](images/C1039FB3FFEF4947A5729987E2BA0DD6clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/C1039FB3FFEF4947A5729987E2BA0DD6clipboard.png)
 
 
 

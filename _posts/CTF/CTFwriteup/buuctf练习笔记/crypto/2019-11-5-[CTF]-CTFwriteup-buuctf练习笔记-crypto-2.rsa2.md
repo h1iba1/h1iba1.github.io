@@ -70,5 +70,5 @@ if __name__=="__main__":
 
 
 
-![](images/951AB004210F4D49B8D1AD7B2F7391D4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/crypto/images/951AB004210F4D49B8D1AD7B2F7391D4clipboard.png)
 

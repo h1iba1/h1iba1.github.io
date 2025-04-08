@@ -28,5 +28,5 @@ sqlmap -u"https://acdc1ff31e4b36ba8046046200ae00da.web-security-academy.net"
 
 
 
-![](images/6059ADE9088C491CADDE542B1FF537C9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/SQL/images/6059ADE9088C491CADDE542B1FF537C9clipboard.png)
 

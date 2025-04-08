@@ -2,7 +2,7 @@
 
 
 
-![](images/1FF027976BF1428ABB5B735F377D76E5clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/1FF027976BF1428ABB5B735F377D76E5clipboard.png)
 
 但是响应包中并不回显，请求数据。
 
@@ -17,5 +17,5 @@
 
 接收到响应
 
-![](images/B0D4AA3FF38349BE91AFDF8392518948clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/B0D4AA3FF38349BE91AFDF8392518948clipboard.png)
 

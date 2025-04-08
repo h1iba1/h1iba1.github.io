@@ -61,7 +61,7 @@ thinkphp文件上传默认路径：
 
 
 
-![](images/F090759508A0464384E1C50C1094F51Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/F090759508A0464384E1C50C1094F51Fclipboard.png)
 
 源码地址：
 
@@ -86,11 +86,11 @@ $uploadFile = $_FILES['file'] ;
 
 而且上传文件的文件名是uniqid函数生成，该函数生成的随机数
 
-![](images/A089F07306794525A8ADFB4D06C3C09Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/A089F07306794525A8ADFB4D06C3C09Bclipboard.png)
 
 
 
-![](images/FAA8E2226D02404495FB95B0C96D2EBAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/FAA8E2226D02404495FB95B0C96D2EBAclipboard.png)
 
 
 

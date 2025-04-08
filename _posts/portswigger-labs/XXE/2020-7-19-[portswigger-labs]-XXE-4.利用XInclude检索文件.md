@@ -1,6 +1,6 @@
 库存检索按钮抓包
 
-![](images/8DC481D7172240C6BE8C71AD5EC9B258clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/8DC481D7172240C6BE8C71AD5EC9B258clipboard.png)
 
 没有xml格式数据，此时也可能存在xxe漏洞
 

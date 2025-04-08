@@ -1,12 +1,12 @@
 # left():
 
-![](images/5F88CDD9C1564FF78FE6260F2D261A8Dclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql盲注/images/5F88CDD9C1564FF78FE6260F2D261A8Dclipboard.png)
 
 
 
 # ascii():
 
-![](images/12423044645742B781E04F31684E7098clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql盲注/images/12423044645742B781E04F31684E7098clipboard.png)
 
 
 
@@ -14,7 +14,7 @@
 
 sbustr(string string,int startNum,int lengthNum):
 
-![](images/029488D6CC01428E991C81D8C6BD16D3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql盲注/images/029488D6CC01428E991C81D8C6BD16D3clipboard.png)
 
 # limit:
 
@@ -32,7 +32,7 @@ ord(string);
 
 ord()函数返回所包含字符串第一个字符的ascii码。
 
-![](images/B6CD999F99504BEFAA4598ED18B5F0B2clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql盲注/images/B6CD999F99504BEFAA4598ED18B5F0B2clipboard.png)
 
 
 
@@ -42,7 +42,7 @@ mid(string string,int start,int length)
 
 mid函数用于得到一个字符串的一部分 ，只在mysql中使用，mssql和oracle中可用SQL SUBSTRING函数或者 SQL SUBSTR函数代替。
 
-![](images/14F82A071DD9415CBE242EA6BFE1EAC7clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql盲注/images/14F82A071DD9415CBE242EA6BFE1EAC7clipboard.png)
 
 
 
@@ -54,5 +54,5 @@ ifnull函数用来判断第一个字符串是否为null，如果为null，则返
 
 
 
-![](images/FFEC87371B1947DAA3DF44978DBD6DA2clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql盲注/images/FFEC87371B1947DAA3DF44978DBD6DA2clipboard.png)
 

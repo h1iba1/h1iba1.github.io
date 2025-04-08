@@ -14,7 +14,7 @@ paylaod:
 
 
 
-![](images/9429C63F178244F2AA55385F3DF0437Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/SQL/images/9429C63F178244F2AA55385F3DF0437Cclipboard.png)
 
 
 

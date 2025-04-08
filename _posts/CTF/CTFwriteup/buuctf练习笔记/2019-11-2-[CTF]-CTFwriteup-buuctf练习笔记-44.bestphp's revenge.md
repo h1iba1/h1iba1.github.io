@@ -78,7 +78,7 @@ call_user_func(array('AAA','hello'));
 
 
 
-![](images/2F9769CE215E4F30810DA455FAD4959DqzFtPIDSYAOU.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2F9769CE215E4F30810DA455FAD4959DqzFtPIDSYAOU.png)
 
 输出结果
 
@@ -88,19 +88,19 @@ call_user_func(array('AAA','hello'));
 
 实验的php版本>5.5，我自己也试了在php5.45.x的版本下，没有sessoin的php_serialize的这个引擎
 
-![](images/6B03F02828B144699781CCF01B624673Jub6L2QSZcW.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6B03F02828B144699781CCF01B624673Jub6L2QSZcW.webp)
 
 php版本要大于5.5
 
 我们可以试验一下,php中session的内容是存在文件里的，在实验前先要改一下php.ini的配置，把session 的文件储存位置改一下，找到session.save_path =然后后面填入你自己存session 的位置即可。
 
-![](images/8DD7B2C9D1244B88B020DBE5619E4DADVafmxsWOh9o.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/8DD7B2C9D1244B88B020DBE5619E4DADVafmxsWOh9o.webp)
 
 session内容是以文件的方式储存的
 
 有session的内容name|s:8:"Mrkaixin";可以看到存储的类型为php而不是序列化，我们再来试试是php_serialize的方式
 
-![](images/0647527D5366430986886A90885DD126YdrPHhpkJ9G.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/0647527D5366430986886A90885DD126YdrPHhpkJ9G.webp)
 
 可以看到和正常反序列化是一样的
 
@@ -140,7 +140,7 @@ http://localhost/get.php?a=|O:4:"test":1:{s:2:"hi";s:3:"sad";};}
 
 然后我们再去访问solve.php,会发现原先test类中的$hi="happy"被替换成了sad，类比这种情况我们就可以进行，session的反序列化攻击了。
 
-![](images/2FA16B1B82E64774BED4FC7B7AA2D050myuDt4N3kBj.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2FA16B1B82E64774BED4FC7B7AA2D050myuDt4N3kBj.webp)
 
 happy->sad
 
@@ -166,25 +166,25 @@ echo "|" . urlencode($a);
 
 接下来分两步走，先利用session反序列化，来把我们的SSRF内容写入session文件中。
 
-![](images/15A9E57C3AA94BCB9B7819E1067666DERMZ9s7VhlFN.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/15A9E57C3AA94BCB9B7819E1067666DERMZ9s7VhlFN.webp)
 
 本地生成代码
 
 然后构造如下包
 
-![](images/ED953CEEB16446DFBB634FE4542A3F917GtVmx6cgTp.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/ED953CEEB16446DFBB634FE4542A3F917GtVmx6cgTp.webp)
 
 传入f、name以及post参数
 
 然后利用变量覆盖漏洞，覆盖掉变量b为回调函数call_user_func
 
-![](images/3AFE0CCC35DD479BB5DC382AA3B50D0FEbzXK3jyDh9.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/3AFE0CCC35DD479BB5DC382AA3B50D0FEbzXK3jyDh9.webp)
 
 然后就可以发现本地的phpsessionid
 
 替换之后就可以得到flag
 
-![](images/115E71E71C40406F818F1057393B9239rlzcXtNa13x.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/115E71E71C40406F818F1057393B9239rlzcXtNa13x.webp)
 
 flag到手
 

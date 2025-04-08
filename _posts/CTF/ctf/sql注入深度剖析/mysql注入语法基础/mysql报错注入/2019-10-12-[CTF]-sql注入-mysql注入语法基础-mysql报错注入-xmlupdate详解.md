@@ -28,5 +28,5 @@ ERROR 1105 (HY000): XPATH syntax error: ’:root@localhost’
 
 
 
-![](images/CD7D15E140A24BA09F71F48F36902BCC2019-03-31_181438.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/mysql注入语法基础/mysql报错注入/images/CD7D15E140A24BA09F71F48F36902BCC2019-03-31_181438.png)
 

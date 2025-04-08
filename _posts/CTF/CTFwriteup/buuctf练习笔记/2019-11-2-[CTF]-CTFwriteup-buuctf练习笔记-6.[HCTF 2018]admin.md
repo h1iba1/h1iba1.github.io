@@ -6,7 +6,7 @@
 
 ## 1.1 登陆之后 提示：you are not admin，猜测要登陆admin用户才可以获取到flag
 
-![](images/FDD5CA5045214196BDE6F07DBB64CE33clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/FDD5CA5045214196BDE6F07DBB64CE33clipboard.png)
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-![](images/77AA3FB402D3490C835F86E8196E626Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/77AA3FB402D3490C835F86E8196E626Fclipboard.png)
 
 
 
@@ -64,13 +64,13 @@ https://www.leavesongs.com/PENETRATION/client-session-security.html
 
 ## 3.1 获取客户端session，并解密
 
-![](images/1DC45DD54FE04A578EBD25F779AA11FAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/1DC45DD54FE04A578EBD25F779AA11FAclipboard.png)
 
 
 
 ## 3.2 python脚本解密：
 
-![](images/3DEAFAE6A21F4B819BB3ACDE1CB9670Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/3DEAFAE6A21F4B819BB3ACDE1CB9670Fclipboard.png)
 
 
 
@@ -97,13 +97,13 @@ token': b'79a1ababc2f6514d92889109f69301f5d2cb44f6', 'name': 'admin', 'user_id':
 
 我们发现config.py中存在
 
-![](images/476375DED0F7424685EE0070F47B06FDclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/476375DED0F7424685EE0070F47B06FDclipboard.png)
 
 
 
 ##  
 
-![](images/D9E8B566A0024CCC97D5F6298A5BDED3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/D9E8B566A0024CCC97D5F6298A5BDED3clipboard.png)
 
 
 
@@ -113,7 +113,7 @@ token': b'79a1ababc2f6514d92889109f69301f5d2cb44f6', 'name': 'admin', 'user_id':
 
 1. 查看密码更改处的代码，发现更改密码时，将用户名更改为小写
 
-![](images/2C19A5F4D77741C18CF39648CEF325F3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2C19A5F4D77741C18CF39648CEF325F3clipboard.png)
 
 
 
@@ -143,7 +143,7 @@ Twisted==10.2.0
 
 而最新版的Twisted已经到了18
 
-![](images/9B59A6194FFC45A8AED14B4216C8FF3Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/9B59A6194FFC45A8AED14B4216C8FF3Eclipboard.png)
 
 很有可能就是低版本这里有问题
 
@@ -163,7 +163,7 @@ https://tw.saowen.com/a/72b7816b29ef30533882a07a4e1040f696b01e7888d60255ab89d37c
 
 
 
-![](images/80A7BAC31A1E4BABAEF642C19B219777clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/80A7BAC31A1E4BABAEF642C19B219777clipboard.png)
 
 第一次进入nodeprep.prepare时转换为大写，第二次转换为小写
 

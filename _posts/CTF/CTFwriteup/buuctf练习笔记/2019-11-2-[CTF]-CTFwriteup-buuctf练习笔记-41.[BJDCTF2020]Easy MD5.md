@@ -12,13 +12,13 @@
 
 后面看wp发现，响应头有提示。。。
 
-![](images/3C9B80733B2249D8AC37F4F8215EFD1Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/3C9B80733B2249D8AC37F4F8215EFD1Bclipboard.png)
 
 
 
 2. password经过了md5的加密，联想到实验吧一个题可以md5之后，含有or造成sql注入
 
-![](images/88CFA4E7C772414081F6EAFC96719971clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/88CFA4E7C772414081F6EAFC96719971clipboard.png)
 
 
 

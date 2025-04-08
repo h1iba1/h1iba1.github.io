@@ -45,7 +45,7 @@ python index.py
 
 访问127.0.0.1：5000即可访问web服务
 
-![](images/AC7DC66539A94B91BB1A759E21A9C9BAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/PYTHON/images/AC7DC66539A94B91BB1A759E21A9C9BAclipboard.png)
 
 
 
@@ -94,7 +94,7 @@ python index_every.py
 
 访问127.0.0.1：5000?user=admin
 
-![](images/CBCBA56C47E94199BF173D0366EAF2ADclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/PYTHON/images/CBCBA56C47E94199BF173D0366EAF2ADclipboard.png)
 
 即可将参数传递到模板
 
@@ -137,7 +137,7 @@ python ssti.py
 
 访问127.0.0.1:5000/ssti/?user={{3*3}}
 
-![](images/67A1DCD9E40F4B9195945064F9A0B256clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/PYTHON/images/67A1DCD9E40F4B9195945064F9A0B256clipboard.png)
 
 产生模板注入
 

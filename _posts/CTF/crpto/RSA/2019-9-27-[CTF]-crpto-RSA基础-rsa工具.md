@@ -1,10 +1,10 @@
 1.rsa tool
 
-![](images/F9A2B509E4784E98898883AA1FC94BD6rsatool使用教程.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/crpto/RSA/images/F9A2B509E4784E98898883AA1FC94BD6rsatool使用教程.png)
 
 2.yafu-1.34
 
-![](images/09963763363C47CBA6F1ED74A9B23C89使用教程.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/crpto/RSA/images/09963763363C47CBA6F1ED74A9B23C89使用教程.png)
 
 
 

@@ -18,7 +18,7 @@
 
 这里使用hashdump工具：
 
-![](images/FB069850B7514EB7B746A119C4DAE4B6clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/FB069850B7514EB7B746A119C4DAE4B6clipboard.png)
 
 
 
@@ -44,7 +44,7 @@ input data to add:貌似可以为任意值
 
 生成的payload的\x替换为%
 
-![](images/C7DDB6B2A4FC49548CD73ADD2492DA99clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/C7DDB6B2A4FC49548CD73ADD2492DA99clipboard.png)
 
 
 

@@ -1,6 +1,6 @@
 1.打开网页发现三个文件：
 
-![](images/6280761DFD414BCEBB81798D60BA1607clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6280761DFD414BCEBB81798D60BA1607clipboard.png)
 
 
 
@@ -8,19 +8,19 @@
 
 2.1 flag.txt
 
-![](images/7490DF9B6EA64A2EA09B025986FF2282clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/7490DF9B6EA64A2EA09B025986FF2282clipboard.png)
 
 
 
 2.2 welcome.txt
 
-![](images/01DB11714738407395E75401EA73BD3Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/01DB11714738407395E75401EA73BD3Cclipboard.png)
 
 
 
 2.3 hints.txt
 
-![](images/EB7BFA71399442EE9B3FE9748D78AB2Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/EB7BFA71399442EE9B3FE9748D78AB2Eclipboard.png)
 
 
 
@@ -44,7 +44,7 @@ https://www.k0rz3n.com/2018/11/12/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%
 
 error?msg={{1^0}}
 
-![](images/EB299E4BE3FF4522A8AB4B1E818C0DB3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/EB299E4BE3FF4522A8AB4B1E818C0DB3clipboard.png)
 
 
 
@@ -56,7 +56,7 @@ error?msg={{1^0}}
 
 error?msg={{handler.settings}}
 
-![](images/865EB4511FFD499491EBC5116CC3B501clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/865EB4511FFD499491EBC5116CC3B501clipboard.png)
 
 得到cookie_secret。
 

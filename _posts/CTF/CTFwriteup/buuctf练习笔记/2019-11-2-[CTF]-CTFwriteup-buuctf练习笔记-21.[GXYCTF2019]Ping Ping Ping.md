@@ -28,13 +28,13 @@ https://xz.aliyun.com/t/3918#toc-4
 
 
 
-![](images/79D7D77C565A4792A2E8A3F214907C2Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/79D7D77C565A4792A2E8A3F214907C2Fclipboard.png)
 
 # 3. 读取flag.php内容发现限制了flag和空格。
 
 空格经过多次测试发现只能使用$IFS\绕过空格限制
 
-![](images/9C1F149AE666491A96CE655D6D8D51E6clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/9C1F149AE666491A96CE655D6D8D51E6clipboard.png)
 
 读取到了index.php的内容
 
@@ -52,7 +52,7 @@ https://xz.aliyun.com/t/3918#toc-4
 
 此时不能用$IFS\只能把后面的\去了才能出flag。玄学
 
-![](images/6DF433F637F2487594F890E6C3437783clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6DF433F637F2487594F890E6C3437783clipboard.png)
 
 
 
@@ -76,5 +76,5 @@ cat$IFS`ls`
 
 
 
-![](images/696642D651114DD8802D8F2833D9345Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/696642D651114DD8802D8F2833D9345Cclipboard.png)
 

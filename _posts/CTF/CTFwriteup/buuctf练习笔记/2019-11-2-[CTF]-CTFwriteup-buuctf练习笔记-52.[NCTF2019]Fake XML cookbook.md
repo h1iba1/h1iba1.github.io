@@ -58,5 +58,5 @@ function doLogin(){
 
 
 
-![](images/D69103CFBD064968896A9309C08C86ABclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/D69103CFBD064968896A9309C08C86ABclipboard.png)
 

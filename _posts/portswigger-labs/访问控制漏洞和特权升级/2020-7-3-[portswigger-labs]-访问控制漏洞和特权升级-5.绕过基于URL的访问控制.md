@@ -42,7 +42,7 @@ Cookie: session=F8fRZQ1Ikq1pcAfkPO8yX7dTQIMb7GUm
 
 
 
-![](images/FE6AE4619A494667B65D76CA62DAEBDAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/访问控制漏洞和特权升级/images/FE6AE4619A494667B65D76CA62DAEBDAclipboard.png)
 
 
 

@@ -42,7 +42,7 @@ schemata ：图解，略图
 
 1.  user_privileges（用户权限）表给出了关于全程权限的信息。该信息源自mysql.user授权表。是非标准表
 
-![](images/87EC359426F04E148B8DC13E21A78176clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入/images/87EC359426F04E148B8DC13E21A78176clipboard.png)
 
 
 

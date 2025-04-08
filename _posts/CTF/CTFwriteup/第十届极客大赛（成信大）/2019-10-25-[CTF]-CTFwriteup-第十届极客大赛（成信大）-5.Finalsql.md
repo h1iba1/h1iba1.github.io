@@ -4,7 +4,7 @@
 ### 2.xor注入（适用于and,or,空格，逗号的场景）
 
 ## fuzz测试：
-![image](images/7BE29652E07F4944A074CA33664B8FA8Finalsql1.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/7BE29652E07F4944A074CA33664B8FA8Finalsql1.png)
 
 发现and，union，空格都被过滤
 
@@ -14,13 +14,13 @@
 
 构造payload:`?id=0^1^0`
 
-![image](images/15204E6D2AFB4B298E902EE8D804B797Finalsql2.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/15204E6D2AFB4B298E902EE8D804B797Finalsql2.png)
 
 发现返回id=1时的界面，此时可以考虑xor注入
 
 payload:`?id=0^(ascii(substr((database()),1,1))>99)^0`
 
-![image](images/B5EECFDF6C53469C95B58E6D46FEBD39Finalsql3.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/B5EECFDF6C53469C95B58E6D46FEBD39Finalsql3.png)
 
 说明此时数据库名第一位ascii为103，为g。和前面的sql注入一样
 

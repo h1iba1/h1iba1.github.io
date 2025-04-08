@@ -6,7 +6,7 @@
 
 1. 过滤测试
 
-![](images/2F2A912D6205492A8BB43F6C8712D80Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2F2A912D6205492A8BB43F6C8712D80Bclipboard.png)
 
 虽然select被过滤但是union/**/select还可以使用
 
@@ -26,7 +26,7 @@
 
 3.确定回显点
 
-![](images/6F8CD6FE04AA4D669B7F1B8D70A0217Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6F8CD6FE04AA4D669B7F1B8D70A0217Fclipboard.png)
 
 用户密码可用作回显点
 
@@ -34,7 +34,7 @@
 
 4. 暴库
 
-![](images/4B44CC4AFE5044CF9D38CAD2F8F551DAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/4B44CC4AFE5044CF9D38CAD2F8F551DAclipboard.png)
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-![](images/136122CFDB2F45E5A67310A0666431BDclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/136122CFDB2F45E5A67310A0666431BDclipboard.png)
 
 
 
@@ -58,5 +58,5 @@
 
 
 
-![](images/8A268906AC3D448CBA8F49C088F32D90clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/8A268906AC3D448CBA8F49C088F32D90clipboard.png)
 

@@ -14,5 +14,5 @@
 
 3.后在password处尝试1'or'1='1登陆得到flag
 
-![](images/1BFCE37FB0B84F40AA9CD88FB543D160clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/1BFCE37FB0B84F40AA9CD88FB543D160clipboard.png)
 

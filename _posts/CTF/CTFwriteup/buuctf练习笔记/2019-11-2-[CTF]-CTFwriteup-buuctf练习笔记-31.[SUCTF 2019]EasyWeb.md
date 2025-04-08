@@ -153,7 +153,7 @@ echo urldecode('%A0%B8%BA%AB')^urldecode($str);
 
 ## 2.2 使用payload：
 
-![](images/66BB9268638E435498A460F04AB230AEclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/66BB9268638E435498A460F04AB230AEclipboard.png)
 
 直接使用system('ls');并不能造成命令执行，一是没回显，二是开启了open_basedir，禁用了很多遍函数。
 
@@ -295,7 +295,7 @@ print(r.text)
 
 ### 3.4.4 ：\x00\x00\x8a\x39\x8a\x39就是wbmp文件的文件头
 
-![](images/ACB1B31019B5423AAA1C343621024EC1clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/ACB1B31019B5423AAA1C343621024EC1clipboard.png)
 
 可用的还有ico文件头
 
@@ -314,7 +314,7 @@ chdir('img');ini_set('open_basedir','..');chdir('..');chdir('..');chdir('..');ch
 
 
 
-![](images/158C8AD222ED4F4CBA01F352637092D9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/158C8AD222ED4F4CBA01F352637092D9clipboard.png)
 
 得到flag文件的文件名
 
@@ -328,5 +328,5 @@ shell.cc?c=chdir('img');ini_set('open_basedir','..');chdir('..');chdir('..');chd
 
 
 
-![](images/C2509C4CB1584BF3AC06F3A8F9E9B2DAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/C2509C4CB1584BF3AC06F3A8F9E9B2DAclipboard.png)
 

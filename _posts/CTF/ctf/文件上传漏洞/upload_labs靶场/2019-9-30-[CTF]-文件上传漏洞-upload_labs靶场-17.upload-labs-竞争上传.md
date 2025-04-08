@@ -44,11 +44,11 @@ if __name__=="__main__":
 
 执行脚本：
 
-![](images/C13E85EDB3504FF0AA458791815A9F62clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/C13E85EDB3504FF0AA458791815A9F62clipboard.png)
 
 访问成功，在上传目录下生成上传脚本：
 
-![](images/1EBEE1ABB9B246D9AB30E2AE113F490Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/1EBEE1ABB9B246D9AB30E2AE113F490Eclipboard.png)
 
 
 
@@ -60,21 +60,21 @@ if __name__=="__main__":
 
 phpinfo.php:.jpg，文件上传成功
 
-![](images/6CC52B1AFAA843B5B71F916AAC54B522clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/6CC52B1AFAA843B5B71F916AAC54B522clipboard.png)
 
 
 
 然后更改文件名为，
 
-![](images/81E8FE8392BD47FF816133E8BC360DD4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/81E8FE8392BD47FF816133E8BC360DD4clipboard.png)
 
 虽然显示，上传错误，但是已经在文件上传目录下生成phpinfo.php文件。
 
-![](images/F5B92483FD5B4AB9806408CEB3449337clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/F5B92483FD5B4AB9806408CEB3449337clipboard.png)
 
 浏览器访问：
 
-![](images/54AE6167453C4229A0B67DFC78B8F047clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/54AE6167453C4229A0B67DFC78B8F047clipboard.png)
 
 
 

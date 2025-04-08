@@ -12,7 +12,7 @@ Steghide可以把信息隐藏在AU, BMP, JPEG 或 WAV格式的文件中。
 
 
 
-![](images/4DD97EA7E54A4C0FABAC118BE0219CACt%2009.31.12.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/杂项/kali下的隐写工具/images/4DD97EA7E54A4C0FABAC118BE0219CACt%2009.31.12.png)
 
 我要把my_secret.txt隐藏到图片中：
 
@@ -24,7 +24,7 @@ Steghide可以把信息隐藏在AU, BMP, JPEG 或 WAV格式的文件中。
 
 下图中包含了隐藏文件（和原始图片相比文件变大了）：
 
-![](images/DA90849B3E67414FBCDDE38339DFB9DCnormal_pic.jpeg)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/杂项/kali下的隐写工具/images/DA90849B3E67414FBCDDE38339DFB9DCnormal_pic.jpeg)
 
 获得隐藏文件：
 

@@ -6,12 +6,12 @@
 
 #### 1.题目说phar，报错又出现了getimagesize函数，说明思路应该是：getimagesize触发phar序列化
 
-![image](images/2F88E6F4DE9C4C8FB6FD7429EE8AF9F5clipboard.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/2F88E6F4DE9C4C8FB6FD7429EE8AF9F5clipboard.png)
 
 #### 2.序列化题目，一般都会提示源码，先尝试得到源码的思路
 
 #### 2.1 鼠标右键查看网页
-![image](images/6E2FBE95366A4E0EBA8316B9AFB464E9clipboard.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/6E2FBE95366A4E0EBA8316B9AFB464E9clipboard.png)
 
 只发现两个php文件，没有源码
 
@@ -123,7 +123,7 @@ $phar->stopBuffering();
 
 但是，只允许上传jpeg|png|gif文件，这里更改文件后缀名为gif，文件头，生成phar文件时已经添加
 
-![image](images/76FDC8EC1DD54E2AAF0E8136172806E2phar%20matches%20everything.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/76FDC8EC1DD54E2AAF0E8136172806E2phar%20matches%20everything.png)
 
 
 #### 5.触发反序列化
@@ -159,7 +159,7 @@ $easyTest=new Easytest();
 echo urlencode(serialize($easyTest));
 ```
 
-![image](images/C97D1E4903934AE0B75F01EBDBCAD173phar%20matches%20everything3.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/C97D1E4903934AE0B75F01EBDBCAD173phar%20matches%20everything3.png)
 
 **5.2 所以payload时url需要添加：**
 
@@ -168,17 +168,17 @@ echo urlencode(serialize($easyTest));
 
 **5.3 phar:// 结合getimagesize()触发phar序列化**
 
-![image](images/6E62E2F66D584A8C91E5A9FEF5EF01F3phar%20matches%20everything4.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/6E62E2F66D584A8C91E5A9FEF5EF01F3phar%20matches%20everything4.png)
 
 
 #### 6.ssrf 探测
 
 分别访问/etc/hosts,/proc/net/arp
 
-![image](images/DD9F33FBF9DA40F1ACD6606F301A3DCCphar%20matches%20everything5.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/DD9F33FBF9DA40F1ACD6606F301A3DCCphar%20matches%20everything5.png)
 
 
-![image](images/29C4FD3E59F74950836EC9F0EB3FB38Dphar%20matches%20everything6.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/29C4FD3E59F74950836EC9F0EB3FB38Dphar%20matches%20everything6.png)
 
 
 探测到三台内网主机：
@@ -187,9 +187,9 @@ echo urlencode(serialize($easyTest));
 
 #### 7.访问10.0.0.3主机时
 
-![image](images/E465970DC6104B5E8ED78C2914F64C6Aphar%20matches%20everything7.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/E465970DC6104B5E8ED78C2914F64C6Aphar%20matches%20everything7.png)
 
-![image](images/E0795CB32BC241C7B4EEF7AEE90F645Dphar%20matches%20everything8.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/E0795CB32BC241C7B4EEF7AEE90F645Dphar%20matches%20everything8.png)
 
 
 此时可知，服务器用的是PHP-FPM
@@ -199,21 +199,21 @@ echo urlencode(serialize($easyTest));
 参考文章：
 https://evoa.me/index.php/archives/52/#toc-SSRFGopher
 
-![image](images/C988B9F56834475FA859097A110B55B3phar%20matches%20everything9.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/C988B9F56834475FA859097A110B55B3phar%20matches%20everything9.png)
 
 参考链接生成exp
 
 **8.1 将生成的exp加入phar文件中**
 
-![image](images/308D72465B6C45A585DBF2F13A2A2942phar%20matches%20everything10.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/308D72465B6C45A585DBF2F13A2A2942phar%20matches%20everything10.png)
 
 **8.2 注意需要将127.0.0.1改为10.0.0.3，10.0.0.3上面运行着php-fpm**
 
-![image](images/F79242AA8E154C809A5F4AA9B885943Dphar%20matches%20everything11.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/F79242AA8E154C809A5F4AA9B885943Dphar%20matches%20everything11.png)
 
 **8.3 代码执行：访问phpinfo();界面**
 
-![image](images/53012E2D032F4D508F84234BBDBF7D26phar%20matches%20everything12.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/53012E2D032F4D508F84234BBDBF7D26phar%20matches%20everything12.png)
 **8.4 disable_function禁用很多函数**
 
 最终构造：
@@ -221,11 +221,11 @@ https://evoa.me/index.php/archives/52/#toc-SSRFGopher
 mkdir('/tmp/fuck');chdir('/tmp/fuck');ini_set('open_basedir','..');chdir('..');chdir('..');chdir('..');chdir('..');chdir('..');ini_set('open_basedir','/');print_r(scandir('/'));readfile('/flag');
 ```
 
-![image](images/C1A85354807D45BAAE26836402F7469Aphar%20matches%20everything13.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/C1A85354807D45BAAE26836402F7469Aphar%20matches%20everything13.png)
 
 **8.5 将生成的exp，加入到phar文件中，上传到靶机**
 
 **8.6 访问即可得到flag**
 
-![image](images/13EFF27618E54307BAAA2127BBF8A035phar%20matches%20everything14.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/13EFF27618E54307BAAA2127BBF8A035phar%20matches%20everything14.png)
 

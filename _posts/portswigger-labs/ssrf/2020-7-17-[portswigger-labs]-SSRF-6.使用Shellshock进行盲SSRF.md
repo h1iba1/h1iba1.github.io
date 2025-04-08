@@ -8,13 +8,13 @@
 
 然后将攻击的域名设置到范围中，这样Collaborator Everywhere才能对流量进行修改
 
-![](images/EE835930C030423A9EE2E58BA6FCC2F8clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/ssrf/images/EE835930C030423A9EE2E58BA6FCC2F8clipboard.png)
 
 
 
 再次抓包：
 
-![](images/6E5F90AFC5D24CCA9498BE56E00CF1DCclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/ssrf/images/6E5F90AFC5D24CCA9498BE56E00CF1DCclipboard.png)
 
 Collaborator Everywhere已经添加了许多Shellshock paylod
 
@@ -44,7 +44,7 @@ Referer: http://192.168.0.§1§:8080
 
 
 
-![](images/49B62CFACBB64D8ABB7B0DAD185CCF5Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/ssrf/images/49B62CFACBB64D8ABB7B0DAD185CCF5Eclipboard.png)
 
 
 

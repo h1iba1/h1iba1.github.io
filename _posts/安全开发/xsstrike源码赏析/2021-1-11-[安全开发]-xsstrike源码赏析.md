@@ -1,7 +1,7 @@
 ---
 title: xsstrike源码赏析
 date: 2022-01-11 21:04:49
-categories: 
+categories:
 - 安全开发
 tags:
 - xss
@@ -80,7 +80,7 @@ domxss检测的核心代码主要在dom.py
 
 #### 结构图：
 
-![1](1.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/1.png)
 
 #### 检测规则：
 
@@ -209,7 +209,7 @@ waf检测代码主要在core/wafDetector.py
 
 #### 结构图:
 
-![1](2.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/2.png)
 
 #### 检测规则：
 
@@ -294,7 +294,7 @@ singleFuzz.py主要负责处理target协议是`https/http`，解析hots,url等�
 
 ##### 结构图：
 
-![1](3.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/3.png)
 
 ##### 检测规则：
 
@@ -362,7 +362,7 @@ def singleFuzz(target, paramData, encoding, headers, delay, timeout):
 
 #### 结构图：
 
-![1](4.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/4.png)
 
 #### 检测规则：
 
@@ -466,7 +466,7 @@ htmlParser.py，filterChecker.py，checker.py。htmlParser.py通过解析其中x
 
 #### 结构图：
 
-![1](1-1369888.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/1-1369888.png)
 
 #### 实现细节：
 
@@ -618,7 +618,7 @@ def htmlParser(response, encoding):
 
 #### 结构图：
 
-![1](2-1369888.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/2-1369888.png)
 
 #### 实现细节：
 
@@ -690,7 +690,7 @@ def checker(url, params, headers, GET, delay, payload, positions, timeout, encod
 
 #### 结构图：
 
-![1](3-1369888.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/3-1369888.png)
 
 #### 功能：
 
@@ -760,7 +760,7 @@ paylaod模块主要依赖两个函数。core/generator.py#generator，core/utils
 
 #### 结构图：
 
-![1](5.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/5.png)
 
 #### 实现细节：
 
@@ -1020,7 +1020,7 @@ def generator(occurences, response):
 
 #### 结构图：
 
-![1](6.png)
+![1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/xsstrike源码赏析/6.png)
 
 #### 实现细节：
 

@@ -24,7 +24,7 @@
 
 在评论，头像处可以看到file:///etc/hostname内容
 
-![](images/4454373D11E2493A9274644261DB2BFDclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/4454373D11E2493A9274644261DB2BFDclipboard.png)
 
 
 

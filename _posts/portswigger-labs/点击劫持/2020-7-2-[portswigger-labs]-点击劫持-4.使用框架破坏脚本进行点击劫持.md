@@ -1,6 +1,6 @@
 页面使用javascript脚本对页面进行了限制：
 
-![](images/24DE6EDA96B748448B3E6FC505F84AFBclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/点击劫持/images/24DE6EDA96B748448B3E6FC505F84AFBclipboard.png)
 
 使页面不能够iframe化
 

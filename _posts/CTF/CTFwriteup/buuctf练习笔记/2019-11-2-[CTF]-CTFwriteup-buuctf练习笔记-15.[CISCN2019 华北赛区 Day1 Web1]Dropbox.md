@@ -14,7 +14,7 @@ https://blog.csdn.net/weixin_44077544/article/details/102844554
 
 有这几个php文件，主要看class.php和delete.php文件按
 
-![](images/BF565443F65541EC9B5D3B07780CACD4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/BF565443F65541EC9B5D3B07780CACD4clipboard.png)
 
 
 
@@ -240,7 +240,7 @@ class File {
 
 # 3. file_get_contents()函数解析phar://伪协议时会将meta-data类型的数据进行反序列化
 
-![](images/E6D53CACB7AB45019DA9DF43FAD4AA67clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/E6D53CACB7AB45019DA9DF43FAD4AA67clipboard.png)
 
 
 
@@ -362,13 +362,13 @@ if (isset($_FILES["file"])) {
 
 upload文件只对上传文件的后缀名和类型做限制，更改文件名和类型即可上传：
 
-![](images/6281418EB2EA44DAA639AACAE6029E3Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6281418EB2EA44DAA639AACAE6029E3Bclipboard.png)
 
 # 6. delete.php文件触发反序列化
 
 因为download.php有限制
 
-![](images/48608D59087749E7BEC6A15A7BDDDE72clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/48608D59087749E7BEC6A15A7BDDDE72clipboard.png)
 
 只能访问到etc和tmp文件下的文件
 
@@ -376,7 +376,7 @@ upload文件只对上传文件的后缀名和类型做限制，更改文件名�
 
 # 7.delete.php访问phar.png文件读取到flag
 
-![](images/BAA5AE42D6AB453DABE59D653D92B661clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/BAA5AE42D6AB453DABE59D653D92B661clipboard.png)
 
 
 

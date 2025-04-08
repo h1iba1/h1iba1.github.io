@@ -4,7 +4,7 @@
 
 访问/robots.txt
 
-![](images/5DE767DC47904BBEA27F9D22A166FB79clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/访问控制漏洞和特权升级/images/5DE767DC47904BBEA27F9D22A166FB79clipboard.png)
 
 
 
@@ -12,5 +12,5 @@
 
 访问：/administrator-panel
 
-![](images/8A8B8B319C3E4468A6CB67C849D73BBCclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/访问控制漏洞和特权升级/images/8A8B8B319C3E4468A6CB67C849D73BBCclipboard.png)
 

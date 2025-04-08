@@ -107,7 +107,7 @@ exec(getallheaders(){1})
 
 
 
-![](images/60F18E5B2BB54FB1A5835B1E9CE8C025clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/60F18E5B2BB54FB1A5835B1E9CE8C025clipboard.png)
 
 # 4.3 直接获取flag
 

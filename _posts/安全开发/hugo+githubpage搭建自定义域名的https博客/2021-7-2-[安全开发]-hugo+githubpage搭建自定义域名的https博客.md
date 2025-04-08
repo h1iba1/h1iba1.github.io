@@ -4,7 +4,7 @@
 
 ```shell
 brew install hugo
-hugo version      查看hugo版本    
+hugo version      查看hugo版本
 ```
 
 ### hugo创建博客:
@@ -45,7 +45,7 @@ echo theme = \"kagome\" >> config.toml   # 更改配置文件，将主题加入�
 hugo server
 ```
 
-![1.1](1.1.png)
+![1.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/1.1.png)
 
 
 
@@ -53,7 +53,7 @@ hugo server
 
 ### 创建一个github仓库：
 
-![2.1](2.1.png)
+![2.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/2.1.png)
 
 ### 发布代码到github：
 
@@ -71,7 +71,7 @@ uglyURLs=true
 
 更改github仓库配置：
 
-![2.2](2.2.png)
+![2.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/2.2.png)
 
 同步代码到GitHub：
 
@@ -94,15 +94,15 @@ git push -u origin master
 
 在仓库根目录建立一个cname文件写入自定义的域名
 
-![3.1](3.1.png)
+![3.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/3.1.png)
 
 ### 注册cloudflare添加站点：
 
-![3.1](3.2.png)
+![3.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/3.2.png)
 
 ### 选择免费功能：
 
-![3.1](3.3.png)
+![3.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/3.3.png)
 
 ### 添加dns解析记录：
 
@@ -110,22 +110,22 @@ git push -u origin master
 A h11ba1.com 185.199.108.153
 A h11ba1.com 185.199.109.153
 A h11ba1.com 185.199.110.153
-A h11ba1.com 185.199.111.153	
+A h11ba1.com 185.199.111.153
 CNAME www h1iba1.github.io
 ```
 
-![3.4](3.4.png)
+![3.4](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/3.4.png)
 
 更改ssl/tls设置：
 
-![3.5](3.5.png)
+![3.5](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/3.5.png)
 
 配置页面规则：
-![3.6](3.6.png)
+![3.6](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/3.6.png)
 
 ### 更改阿里云域名dns服务器：
 
-![3.6](3.7.png)
+![3.6](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/安全开发/hugo+githubpage搭建自定义域名的https博客/3.7.png)
 
 ## 4.hugo的一些简单配置
 
@@ -158,7 +158,7 @@ uglyURLs=true
     identifier = "about"
     name       = "About"
     url        = "about/"
-    
+
 # 配置页脚
     [[menu.social]]
       # 唯一标识符

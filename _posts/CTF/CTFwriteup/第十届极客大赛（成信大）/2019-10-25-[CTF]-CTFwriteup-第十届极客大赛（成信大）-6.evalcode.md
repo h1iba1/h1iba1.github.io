@@ -17,13 +17,13 @@ for x in range(1,300000):
 
 `system('ls');`
 
-![image](images/69A09DA695054E4EAB986A79F3F643D5evalcode1.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/69A09DA695054E4EAB986A79F3F643D5evalcode1.png)
 
 根据返回提示知道为无参数代码执行，参考bytectf boringcode
 
 ## 3.查看phpinfo页面
 
-![image](images/032A041F49E04722A55876AC7B888182evalcode2.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/032A041F49E04722A55876AC7B888182evalcode2.png)
 
 disable_function模块无任何函数限制。
 
@@ -31,13 +31,13 @@ disable_function模块无任何函数限制。
 
 payload:`var_dump(scandir(current(localeconv())));`
 
-![image](images/030A3F34BB484731BC290C3049C8FADCevalcode3.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/030A3F34BB484731BC290C3049C8FADCevalcode3.png)
 
 ### 5.falg应该在the_flag.php文件中，构造payload读取倒数第二个文件：
 
 `readfile(next(array_reverse(scandir(getcwd()))));`
 
-![image](images/763B9A2AA256482CBAF06E217A7D4F72evalcode4.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/763B9A2AA256482CBAF06E217A7D4F72evalcode4.png)
 
 成功读取flag。
 
@@ -61,7 +61,7 @@ readfile(): 文件读取
 
 https://xz.aliyun.com/t/6316
 
-![image](images/3365BECB88C546558068FC5A392D6ADEevalcode5.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/3365BECB88C546558068FC5A392D6ADEevalcode5.png)
 
 ### 大佬们甚至写出了全自动脚本
 

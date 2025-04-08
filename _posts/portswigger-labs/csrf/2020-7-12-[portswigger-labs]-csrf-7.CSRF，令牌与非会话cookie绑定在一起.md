@@ -1,6 +1,6 @@
 
 
-![](images/3B804C823B164AC3A4B104B091D074AAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/csrf/images/3B804C823B164AC3A4B104B091D074AAclipboard.png)
 
 将用户一的csrfkey和csrf用用户二的替换，还可以执行更改密码操作，说明存在csrf
 
@@ -8,7 +8,7 @@
 
 执行搜索时发现输入的搜索值会包含到响应头里，可以尝试cookie注入
 
-![](images/F04D28EEE032403CB7E7248E15F28253clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/csrf/images/F04D28EEE032403CB7E7248E15F28253clipboard.png)
 
 
 

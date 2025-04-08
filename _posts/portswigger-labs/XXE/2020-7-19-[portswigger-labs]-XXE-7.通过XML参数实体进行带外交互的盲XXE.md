@@ -13,5 +13,5 @@ poc:
 
 burp collaborator客户端:
 
-![](images/6A37D025A7F947ADADF228D70BF6CCDCclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/6A37D025A7F947ADADF228D70BF6CCDCclipboard.png)
 

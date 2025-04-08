@@ -38,7 +38,7 @@ http://chenxiyuan.vip/2019/07/29/BUUCTF-web-writeup-%E4%BA%8C/
 
 首先来研究一下pathinfo函数以及basename函数的机制
 
-![](images/0F91B285459747C39648CCA7AD995062Z2sbAs.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/0F91B285459747C39648CCA7AD995062Z2sbAs.png)
 
 basename() 函数返回路径中的文件名部分,对于如下代码：
 
@@ -162,7 +162,7 @@ http://web7.buuoj.cn/sandbox/99ca4e36b9277744c847e190081f7fed/chenxiyuan
 
 
 
-![](images/2618DCD438A244889804119E1DE2428Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2618DCD438A244889804119E1DE2428Cclipboard.png)
 
 
 

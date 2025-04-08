@@ -44,7 +44,7 @@ $$在php中很容易导致变量覆盖
 
 经过多次调试，
 
-![](images/6C5BB60098074FAD817911A971C58937clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/cgctf/web/images/6C5BB60098074FAD817911A971C58937clipboard.png)
 
 payload:?name=meizijiu
 

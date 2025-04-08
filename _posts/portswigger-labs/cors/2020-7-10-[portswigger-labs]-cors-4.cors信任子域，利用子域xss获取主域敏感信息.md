@@ -1,6 +1,6 @@
 
 
-![](images/7DD8892D9025408E891BFB01FF038D6Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/cors/images/7DD8892D9025408E891BFB01FF038D6Eclipboard.png)
 
 当添加任意子域时，响应标头返回，说明cors信任任意子域
 
@@ -8,7 +8,7 @@
 
 该网站的检查库存会将单价信息返回到子域，并且productId参数存在xss漏洞
 
-![](images/7577CAA55B6E425E98353F608BC6D42Aclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/cors/images/7577CAA55B6E425E98353F608BC6D42Aclipboard.png)
 
 
 

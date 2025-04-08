@@ -1,12 +1,12 @@
 检查库存处抓包，发现xml格式数据
 
-![](images/37692C97E92C445DBC3488F975FC0DC8clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/37692C97E92C445DBC3488F975FC0DC8clipboard.png)
 
 
 
 使用文件爆破进行ssrf探测
 
-![](images/5DC21AF604A74DB9A3AEAC837A9C561Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/5DC21AF604A74DB9A3AEAC837A9C561Cclipboard.png)
 
 
 
@@ -14,5 +14,5 @@
 
 返回JSON SecretAccessKey。
 
-![](images/FBFEE71D254C44709CBA70A3BA316749clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/FBFEE71D254C44709CBA70A3BA316749clipboard.png)
 

@@ -12,11 +12,11 @@
 
 推测存在文件包含。将image=后面的文件名加密成base64字符串。
 
-![](images/1E4FBAEAE3434F1C890227C65E325E55clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/1E4FBAEAE3434F1C890227C65E325E55clipboard.png)
 
 
 
-![](images/C7F1BE2ED97B4DEEA79DA2DA00B29335clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/C7F1BE2ED97B4DEEA79DA2DA00B29335clipboard.png)
 
 
 
@@ -39,7 +39,7 @@ print(base2.decode())
 
 # 3.读取到index.php的内容
 
-![](images/EEF3C5CF92954E67A0E8594DA7255DA4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/EEF3C5CF92954E67A0E8594DA7255DA4clipboard.png)
 
 将base64密文解码即可：
 
@@ -116,7 +116,7 @@ if (preg_match("/ls|bash|tac|nl|more|less|head|wget|tail|vi|cat|od|grep|sed|bzmo
 
 # 5.读取flag
 
-![](images/71320612208C49E5B98777484502065Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/71320612208C49E5B98777484502065Fclipboard.png)
 
 
 

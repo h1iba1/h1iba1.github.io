@@ -1,6 +1,6 @@
 ## 1. 登陆administrator用户。发现用户权限升级操作。最后需要执行yes操作。将该步骤抓包
 
-![](images/C0906A92797949B19429A12A9D54121Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/访问控制漏洞和特权升级/images/C0906A92797949B19429A12A9D54121Cclipboard.png)
 
 
 
@@ -14,7 +14,7 @@ action=upgrade&confirmed=true&username=wiener
 
 
 
-![](images/E1730215BFB64E3887C0F80B0F41BDF7clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/访问控制漏洞和特权升级/images/E1730215BFB64E3887C0F80B0F41BDF7clipboard.png)
 
 
 

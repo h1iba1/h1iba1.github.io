@@ -10,15 +10,15 @@
 
 上传成功。
 
-![](images/7ACD1DEF42544F028771BF0D1661DEB4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/7ACD1DEF42544F028771BF0D1661DEB4clipboard.png)
 
 接下来上传一个黑名单里并不存在的文件后缀木马。
 
-![](images/8D741FB0B20D442ABCC034F244DCD450clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/8D741FB0B20D442ABCC034F244DCD450clipboard.png)
 
 访问该文件。
 
-![](images/6981EE0438FF4E41A52CAD12C8231531clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/6981EE0438FF4E41A52CAD12C8231531clipboard.png)
 
 参考链接:
 

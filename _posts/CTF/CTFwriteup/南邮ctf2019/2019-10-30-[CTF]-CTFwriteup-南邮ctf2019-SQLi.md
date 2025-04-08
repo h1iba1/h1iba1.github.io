@@ -20,7 +20,7 @@
 虽然单引号被过滤，但是此处不难想到可以转义
 
 
-![image](images/9F222969F8D74D47845779DE0B3B383BSQLi1.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/9F222969F8D74D47845779DE0B3B383BSQLi1.png)
 
 在本地执行时，regexp会将内容含有a的列匹配出来
 
@@ -39,7 +39,7 @@ or-->||
 
 ### 5.匹配的内容爆破尝试
 
-![image](images/9422BA9EF2F6445C9260447B308BCE96SQLi2.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/9422BA9EF2F6445C9260447B308BCE96SQLi2.png)
 
 会返回两种内容，推测语句执行成功时，页面不会给出`alert("try to make the sqlquery have its own results")`的提示
 

@@ -18,7 +18,7 @@ https://paper.seebug.org/164/
 
 
 
-![](images/601B5E1515B64282882D8C149F5F029Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/601B5E1515B64282882D8C149F5F029Bclipboard.png)
 
 
 

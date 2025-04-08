@@ -8,7 +8,7 @@
 
 1. 经过不断尝试发现不是xss，而是sql注入
 
-![](images/CCC31A50C1884CE28D5E6E2A351BA2AFclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/CCC31A50C1884CE28D5E6E2A351BA2AFclipboard.png)
 
 
 
@@ -44,7 +44,7 @@ null,null,null,null,null,null,null,null,null,null,null,null,null;%00
 
 但是or被过滤，导致information.schema不可以使用，但是发现数据库版本为：
 
-![](images/978F3C2712F6461794D01982A54DDA0Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/978F3C2712F6461794D01982A54DDA0Bclipboard.png)
 
 使用 innodb 存储引擎
 
@@ -73,7 +73,7 @@ sys 有一些有用的表：
 
 因为用户权限是root，所以可以使用sys数据库。但是mariaDB数据库中没有sys数据库。
 
-![](images/B9DBCA3E506C43BDACE1DB908F71A25CQ1zBSxLHVMCb.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/B9DBCA3E506C43BDACE1DB908F71A25CQ1zBSxLHVMCb.png)
 
 
 
@@ -89,7 +89,7 @@ null,null,null,null,null,null,null,null,null,null,null,null,null;%00
 
 
 
-![](images/32BF24F12BB54886BC68F86EEE9A91D5clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/32BF24F12BB54886BC68F86EEE9A91D5clipboard.png)
 
 
 

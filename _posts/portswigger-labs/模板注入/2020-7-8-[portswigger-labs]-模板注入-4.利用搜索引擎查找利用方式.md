@@ -8,7 +8,7 @@
 
 发现报错
 
-![](images/79031AA38DBB406D8D2FB4D96CCD9754clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/模板注入/images/79031AA38DBB406D8D2FB4D96CCD9754clipboard.png)
 
 根据报错信息搜索发现npm服务，也确定这是一个node.js服务
 

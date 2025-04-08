@@ -212,7 +212,7 @@ Content-Disposition: form-data; name="filename"
 
 
 
-![](images/E63A69815EF1428AB8192DA71B711852clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/d^3ctf/images/E63A69815EF1428AB8192DA71B711852clipboard.png)
 
 phar文件生成脚本：
 

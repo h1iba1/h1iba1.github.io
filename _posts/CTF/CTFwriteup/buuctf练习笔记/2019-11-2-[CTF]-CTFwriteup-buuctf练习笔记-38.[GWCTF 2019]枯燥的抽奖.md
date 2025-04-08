@@ -119,9 +119,9 @@ root@kali:~/桌面/软件/php_mt_seed-4.0#
 
 # 5. 带到源代码，运行：
 
-![](images/270A7D4A00A14E25A182B5A5F11F088Aclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/270A7D4A00A14E25A182B5A5F11F088Aclipboard.png)
 
 提交得到flag
 
-![](images/6C6D973497F843AD8EC0803467673E8Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6C6D973497F843AD8EC0803467673E8Eclipboard.png)
 

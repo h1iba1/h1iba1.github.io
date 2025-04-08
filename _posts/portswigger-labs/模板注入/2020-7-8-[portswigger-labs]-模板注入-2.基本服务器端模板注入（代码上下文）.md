@@ -6,7 +6,7 @@
 
 首选名称功能处，使用了对象引用的语法，可能存在模板注入
 
-![](images/C5792D8314E246A8B876ADE54E2BADA9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/模板注入/images/C5792D8314E246A8B876ADE54E2BADA9clipboard.png)
 
 
 
@@ -20,7 +20,7 @@ payload:
 
 发现会在评论处的姓名中出现预想的49
 
-![](images/A292BBE457A540018053828A5ADC48A4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/模板注入/images/A292BBE457A540018053828A5ADC48A4clipboard.png)
 
 说明存在ssti
 

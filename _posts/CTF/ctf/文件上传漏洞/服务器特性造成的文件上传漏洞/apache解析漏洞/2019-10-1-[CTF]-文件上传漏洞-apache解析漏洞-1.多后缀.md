@@ -34,7 +34,7 @@ apache无法解析rar，一直往左判断，直到遇到可解析的php，开�
 
 httpd -v；
 
-![](images/90A32FCD06CA45B9A48DA84C88F78FF2clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/服务器特性造成的文件上传漏洞/apache解析漏洞/images/90A32FCD06CA45B9A48DA84C88F78FF2clipboard.png)
 
 
 
@@ -42,7 +42,7 @@ httpd -v；
 
 文件路径：D:\phpstudy\phpstudy2018\PHPTutorial\Apache\conf\mime.types
 
-![](images/5752F706E60E456A9422F94F342356E0clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/服务器特性造成的文件上传漏洞/apache解析漏洞/images/5752F706E60E456A9422F94F342356E0clipboard.png)
 
 
 

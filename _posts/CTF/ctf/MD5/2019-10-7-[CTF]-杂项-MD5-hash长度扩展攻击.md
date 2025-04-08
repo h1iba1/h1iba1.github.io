@@ -59,11 +59,11 @@ syclover\x80\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
 
 
 
-![](images/5C8B3BB91ED042AEAA8DBC0A88DD0977clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/MD5/images/5C8B3BB91ED042AEAA8DBC0A88DD0977clipboard.png)
 
 
 
-![](images/F9D56910A66442849A6DC4F03299C89Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/MD5/images/F9D56910A66442849A6DC4F03299C89Cclipboard.png)
 
 注：此处的payload：\x需要替换成%
 

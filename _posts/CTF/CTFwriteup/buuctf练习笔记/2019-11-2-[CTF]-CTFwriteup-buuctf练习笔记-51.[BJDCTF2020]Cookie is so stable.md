@@ -20,7 +20,7 @@ payload:
 
 
 
-![](images/C39677EE66C0403DAB952AA207A37E51clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/C39677EE66C0403DAB952AA207A37E51clipboard.png)
 
 
 
@@ -32,6 +32,6 @@ payload:
 
 
 
-![](images/9B831080F35044BE892AEB1C9374BCBEclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/9B831080F35044BE892AEB1C9374BCBEclipboard.png)
 
 命令执行成功，只需要cat /flag即可得到flag

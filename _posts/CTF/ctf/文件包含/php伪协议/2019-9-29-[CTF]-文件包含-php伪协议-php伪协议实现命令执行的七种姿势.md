@@ -70,13 +70,13 @@ allow_url_fopen ：off/on
 
 allow_url_include：off/on
 
-![](images/8F76A4E16A0C4F8E9EF2DDA95DB5298C345326e6c25.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/8F76A4E16A0C4F8E9EF2DDA95DB5298C345326e6c25.webp)
 
 测试现象：
 
 http://127.0.0.1/cmd.php?file=php://filter/read=convert.base64-encode/resource=./cmd.php
 
-![](images/9843511770444676B2718DDF84BA2D834a99689544c.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/9843511770444676B2718DDF84BA2D834a99689544c.webp)
 
 php://input  可以访问请求的原始数据的只读流, 将post请求中的数据作为PHP代码执行。
 
@@ -86,7 +86,7 @@ allow_url_fopen ：off/on
 
 allow_url_include：on
 
-![](images/C8653E8E1ACE48A8AB77B02A556D8E8E2a0008265be.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/C8653E8E1ACE48A8AB77B02A556D8E8E2a0008265be.webp)
 
 测试现象：
 
@@ -96,7 +96,7 @@ http://127.0.0.1/cmd.php?file=php://input
 
 也可以POST如下内容生成一句话：');?> ')
 
-![](images/B721E9E2A6704476BFCA3C7DAE4E8612bbd6406d770.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/B721E9E2A6704476BFCA3C7DAE4E8612bbd6406d770.webp)
 
 【zip://, bzip2://, zlib://协议】
 
@@ -112,7 +112,7 @@ zip://, bzip2://, zlib:// 均属于压缩流，可以访问压缩文件中的子
 
 参考自：http://php.net/manual/zh/wrappers.compression.php
 
-![](images/7BB6909068E54348B1EA0836200F8D32cd624e796c6.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/7BB6909068E54348B1EA0836200F8D32cd624e796c6.webp)
 
 【zip://协议】
 
@@ -130,7 +130,7 @@ http://127.0.0.1/cmd.php?file=zip://D:/soft/phpStudy/WWW/file.jpg%23phpcode.txt
 
 由于#在get请求中会将后面的参数忽略所以使用get请求时候应进行url编码为%23，且此处经过测试相对路径是不可行，所以只能用绝对路径。
 
-![](images/1E05839B914E4069A6E193160C2BF8E7c787ec4400b.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/1E05839B914E4069A6E193160C2BF8E7c787ec4400b.webp)
 
 【bzip2://协议】
 
@@ -146,7 +146,7 @@ or
 
 http://127.0.0.1/cmd.php?file=compress.bzip2://./file.jpg
 
-![](images/CCFAB032E2A740239AA55CEF81DAD9A4e27be24c963.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/CCFAB032E2A740239AA55CEF81DAD9A4e27be24c963.webp)
 
 【zlib://协议】
 
@@ -162,7 +162,7 @@ or
 
 http://127.0.0.1/cmd.php?file=compress.zlib://./file.jpg
 
-![](images/BAAEAF5B6745478B81BD1BA9366CACF4add35f5aaf3.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/BAAEAF5B6745478B81BD1BA9366CACF4add35f5aaf3.webp)
 
 【data://协议】
 
@@ -178,7 +178,7 @@ allow_url_include：on
 
 参考自：http://php.net/manual/zh/wrappers.data.php, 官方文档上allow_url_fopen应为yes。
 
-![](images/3C633AA7E39249A0AC2BBC260AE9C4211e8870b0b31.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/3C633AA7E39249A0AC2BBC260AE9C4211e8870b0b31.webp)
 
 测试现象：
 
@@ -196,11 +196,11 @@ or
 
 http://127.0.0.1/cmd.php?file=data:text/plain;base64,PD9waHAgcGhwaW5mbygpPz4=
 
-![](images/AFCF54A0E7274998A119A28A7328FA0329afacb8d4a.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/AFCF54A0E7274998A119A28A7328FA0329afacb8d4a.webp)
 
 0x03  常规小结：
 
 PHP封装协议在CTF蛮常见的，是经常会遇到的出题点，如下便是对本篇涉及的封装协议进行的总结，期待小伙伴的交流和补充。
 
-![](images/1708C472A28A4D708A012ACA5F6F204F305bb0fcd75.webp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/1708C472A28A4D708A012ACA5F6F204F305bb0fcd75.webp)
 

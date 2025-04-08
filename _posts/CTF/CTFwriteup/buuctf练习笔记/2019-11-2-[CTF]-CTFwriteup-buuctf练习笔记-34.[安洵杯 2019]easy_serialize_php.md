@@ -67,7 +67,7 @@ if($function == 'highlight_file'){
 
 # 3.观察源码，发现phpinfo有提示，查看phpinfo，发现flag所在位置
 
-![](images/8544AC5ECA1A48D58FD968ABD5D05301clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/8544AC5ECA1A48D58FD968ABD5D05301clipboard.png)
 
 现在所要做的就是读取d0g3_f1ag.php的内容
 
@@ -152,7 +152,7 @@ else if($function == 'show_image'){
 
 
 
-![](images/9C70C1998D1C44968F24C900AB089EF3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/9C70C1998D1C44968F24C900AB089EF3clipboard.png)
 
 
 
@@ -168,7 +168,7 @@ ZDBnM19mMWFnLnBocA==为d0g3_f1ag.php的base64编码
 
 # 9. 发现flag，在d0g3_fllllllag，重新构造读取
 
-![](images/4F227C76D25E4257A4B1492586C20229clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/4F227C76D25E4257A4B1492586C20229clipboard.png)
 
 post:
 

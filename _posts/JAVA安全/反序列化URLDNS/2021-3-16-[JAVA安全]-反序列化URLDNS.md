@@ -187,16 +187,16 @@ getHostAddress方法中调用了InetAddress.getByName(host);此处造成了dns�
 
 所以我们想要利用该dns查询链条，就需要找到一个地方调用url.hashCode()。
 
-而java.util.HashMap#hash():中 
+而java.util.HashMap#hash():中
 
-![2.1](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/2.1.png)
+![2.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/2.1.png)
 
 只要key键值为一个url对象即可触发url.hashCode()。
 
 而java.util.HashMap#readObject()方法中就调用了Hash()方法。
 
-![2.2](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/2.2.png)
-
+![2.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/2.2.png)
+_posts/JAVA安全
 所以可以大致梳理一遍流程就是：
 
 HashMap->readObject()
@@ -282,17 +282,17 @@ f.set(url, -1);
 
 这里这样写的原因是因为put添加数据时也会调用putVal()，此处和readObject()函数是一样的
 
-![4.1](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/4.1.png)
+![4.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/4.1.png)
 
 readObject()-->putVal:
 
-![4.2](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/4.2.png)
+![4.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/4.2.png)
 
 会进行dns请求。这样会导致在payload构造时本地主机即会请求一次dnslog。可能对后面利用dnslog检测反序列化漏洞造成干扰。
 
 所以在put时先将url.hashCode设置为-1以外的值。put添加数据之后再还原回-1。至于为啥是-1。是因为java.net.URL#hashCode()的逻辑判断：
 
-![4.3](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/4.3.png)
+![4.3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/4.3.png)
 
 
 
@@ -410,10 +410,10 @@ ysoserial做了解释`Since the field <code>java.net.URL.handler</code> is trans
 
 进入URL类查看handler属性，handler之前有一个transient关键字。
 
-![5.2](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/5.2.png)
+![5.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/5.2.png)
 
 transient关键字介绍：
-![5.1](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/5.1.png)
+![5.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/5.1.png)
 
 所以handler属性在序列化时并被序列化。这样在进行反序列化时handler为默认的URLStreamHandler类属性，继续执行URLStreamHandler类里的InetAddress.getHostAddress()方法。
 
@@ -431,7 +431,7 @@ java -agentlib:jdwp=transport=dt_socket,server=n,address=10.45.9.48:5005,suspend
 ysoserial可以idea起端口，ysoserial链接进行调试。
 
 1. 首先在建立一个远程调试端口：
-   ![6.1](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/6.1.png)
+   ![6.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/6.1.png)
 
 2. 点击debug进入监听状态
 3. terminal输入ysoserial启动语句(不同版本可能不一样，可以直接复制command line argument for remote JVM 去掉<>两个参数，根据实际需求修改)
@@ -440,7 +440,7 @@ ysoserial可以idea起端口，ysoserial链接进行调试。
 java -agentlib:jdwp=transport=dt_socket,server=n,address=10.45.9.48:5005,suspend=y -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS "http://maazpy.dnslog.cn"
 ```
 
-![6.2](/Users/h11ba1/Desktop/markdown/博客/java安全系列学习/反序列化URLDNS/6.2.png)
+![6.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/6.2.png)
 
 生成payload时执行到SilentURLStreamHandler的getHostAddress()方法返回null，就不会产生dns请求。
 
@@ -448,7 +448,7 @@ java -agentlib:jdwp=transport=dt_socket,server=n,address=10.45.9.48:5005,suspend
 
 p神知识星球-反序列化系列（1-3）
 
-[JAVA反序列化-ysoserial-URLDNS](https://www.anquanke.com/post/id/201762)
+[JAVA反序列化-ysoserial-URLDNS](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/https://www.anquanke.com/post/id/201762)
 
-[Java反序列化-URLDNS](http://wjlshare.com/archives/1493)
+[Java反序列化-URLDNS](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/JAVA安全/反序列化URLDNS/http://wjlshare.com/archives/1493)
 

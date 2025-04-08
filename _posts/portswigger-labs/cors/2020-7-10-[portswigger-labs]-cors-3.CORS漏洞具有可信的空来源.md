@@ -1,6 +1,6 @@
 
 
-![](images/B72D14489EAE4567A8665558FC2F08C2clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/cors/images/B72D14489EAE4567A8665558FC2F08C2clipboard.png)
 
 当origin:null时也可以获取到apikey，说明存在cors漏洞
 
@@ -8,7 +8,7 @@
 
 在本地用html验证
 
-![](images/145DB686C5FB4C969DE9DBE31D5F3DB8clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/cors/images/145DB686C5FB4C969DE9DBE31D5F3DB8clipboard.png)
 
 poc:
 

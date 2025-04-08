@@ -10,13 +10,13 @@ https://xz.aliyun.com/t/5402#toc-0
 
 1.网页源码发现存在
 
-![](images/90D546C01F6247AE89F7B561A74B55BEclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/90D546C01F6247AE89F7B561A74B55BEclipboard.png)
 
 
 
 2.报错提示需要一个unicode字符作为参数
 
-![](images/785DF0EFFEF64222A9BA91376E9530C2clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/785DF0EFFEF64222A9BA91376E9530C2clipboard.png)
 
 
 
@@ -36,23 +36,23 @@ https://www.compart.com/en/unicode/
 
 
 
-![](images/71D14C20379B4C268953C824A9604539clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/71D14C20379B4C268953C824A9604539clipboard.png)
 
 
 
 5.找一个数值大于1370的
 
-![](images/7157FC33B38E475791215A91902E0C18clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/7157FC33B38E475791215A91902E0C18clipboard.png)
 
 
 
 6.但是需要将其转换成url编码
 
-![](images/626790998D3843E49F75CDE1F693EB7Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/626790998D3843E49F75CDE1F693EB7Fclipboard.png)
 
 
 
-![](images/7621B730F7F346E6910F5FC36E84C748clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/7621B730F7F346E6910F5FC36E84C748clipboard.png)
 
 其实也就是其utf-8编码，将0x变为%
 
@@ -60,5 +60,5 @@ https://www.compart.com/en/unicode/
 
 7.购买超级独角兽
 
-![](images/D56B0D471A264BD4A5D9705327536380clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/D56B0D471A264BD4A5D9705327536380clipboard.png)
 

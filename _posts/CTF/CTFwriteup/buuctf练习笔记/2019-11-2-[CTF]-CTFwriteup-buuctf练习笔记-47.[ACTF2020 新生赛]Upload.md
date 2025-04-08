@@ -20,5 +20,5 @@
 
 上传成功
 
-![](images/F7C8033DEB084BFEA22CD20F3FA41554clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/F7C8033DEB084BFEA22CD20F3FA41554clipboard.png)
 

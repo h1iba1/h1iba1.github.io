@@ -47,7 +47,7 @@ readfile($path);
 
 此时可以利用该addslashes和str_replace来造成单引号逃逸
 
-![](images/AF8C31D40CD94A91B999871BDCC367ADclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/AF8C31D40CD94A91B999871BDCC367ADclipboard.png)
 
 单id=\\0，时，经过addslashes时被转义成了\\0
 
@@ -76,7 +76,7 @@ select * from admin1 where id='\' or username='or 1=1;#'
 
 
 
-![](images/3B503A2B57BF4106A80E02281F1F2F80clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/3B503A2B57BF4106A80E02281F1F2F80clipboard.png)
 
 
 
@@ -87,7 +87,7 @@ select * from admin1 where id='\' or username='or 1=1;#'
 
 
 
-![](images/2CBAE5F31D6E4825B9A5AF99206631E9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2CBAE5F31D6E4825B9A5AF99206631E9clipboard.png)
 
 当查询结果为真时返回第一张图片，当为假时返回为空
 
@@ -127,19 +127,19 @@ print(name)
 
 得到密码为：
 
-![](images/41DFE639F488482EADF7AF893DA984B6clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/41DFE639F488482EADF7AF893DA984B6clipboard.png)
 
 
 
 # 6. 用户名为admin，登陆发现存在文件上传界面
 
-![](images/11A20B3DA7AF473187C28B7D8FE92CB0clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/11A20B3DA7AF473187C28B7D8FE92CB0clipboard.png)
 
 
 
 上传文件之后，会给出日志文件的路径
 
-![](images/DB22273929AF4A188DDEA8749DF3A8EDclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/DB22273929AF4A188DDEA8749DF3A8EDclipboard.png)
 
 且日志文件为php文件，会限制上传文件的文件名。
 
@@ -147,7 +147,7 @@ print(name)
 
 # 7.可以尝试将文件名写为一句话马，构造shell
 
-![](images/CAD240578BAE4786A9641BFF151FAB05clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/CAD240578BAE4786A9641BFF151FAB05clipboard.png)
 
 发现会检测上传的文件的文件名，不能含有php
 
@@ -165,7 +165,7 @@ print(name)
 
 # 9.蚁剑链接，根目录发现flag
 
-![](images/00349B8FEA6449B4852C90764B6D321Dclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/00349B8FEA6449B4852C90764B6D321Dclipboard.png)
 
 
 

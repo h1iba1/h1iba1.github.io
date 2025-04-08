@@ -20,5 +20,5 @@ payload:
 
 
 
-![](images/EC263D8EB2E14FEE84D4751848EB6152clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/SQL/images/EC263D8EB2E14FEE84D4751848EB6152clipboard.png)
 

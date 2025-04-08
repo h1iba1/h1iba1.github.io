@@ -16,7 +16,7 @@ Smi1e
 
  
 
-![](images/39F42CDA3FA74A3EA2D4C17A62BFFDC3IMG_0996.jpeg)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/39F42CDA3FA74A3EA2D4C17A62BFFDC3IMG_0996.jpeg)
 
 文件包含漏洞与PHP伪协议
 
@@ -64,7 +64,7 @@ file:// [文件的绝对路径和文件名]
 
 http://192.168.86.1/filebh.php?page=file://e:/tool/phpstudy/phptutorial/www/phpinfo.php
 
-![](images/4C4F8A4AC04F46ADBFB1E3EF1F1DDBCFb3d7d45898c3.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/4C4F8A4AC04F46ADBFB1E3EF1F1DDBCFb3d7d45898c3.png)
 
 php://协议
 
@@ -97,7 +97,7 @@ resource=upload.php，代表读取upload.php的内容
 
 这样就可以以base64编码的方式读取文件源代码
 
-![](images/E1B9D70C8062420A93E11B19D086F620ddfceea85ef8.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/E1B9D70C8062420A93E11B19D086F620ddfceea85ef8.png)
 
 过滤器
 
@@ -164,13 +164,13 @@ string.strip_tags
 
 php的stream_filter_append和stream_filter_prepend
 
-![](images/9C6EE2FC0E6B4738B3FD5821D28D79AA2f39d13d7c46.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/9C6EE2FC0E6B4738B3FD5821D28D79AA2f39d13d7c46.png)
 
 
 
 <转换过滤器>
 
-![](images/2D19B9A3B9B94B2FA048C4A53C83BD6A0a43dbaa6085.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/2D19B9A3B9B94B2FA048C4A53C83BD6A0a43dbaa6085.png)
 
 
 
@@ -216,13 +216,13 @@ php的stream_filter_append和stream_filter_prepend
 ?>
 
 
-![](images/9B88A7562ADA427FAADF7029DA1C6F8F09152de6cca0.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/9B88A7562ADA427FAADF7029DA1C6F8F09152de6cca0.png)
 
 
 
 <压缩过滤器>
 
-![](images/4E2944ABFA2F49DF8CFAE62B8419390Dee59917a75dd.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/4E2944ABFA2F49DF8CFAE62B8419390Dee59917a75dd.png)
 
 
 
@@ -254,7 +254,7 @@ This is not an important string.
 
 <加密过滤器>
 
-![](images/764F08E3DB7B4CFEA3FC14746D7427451ec0622ed7f6.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/764F08E3DB7B4CFEA3FC14746D7427451ec0622ed7f6.png)
 
 实例
 
@@ -273,7 +273,7 @@ payload=http://127.0.0.1/xxx.php?a=php://filter/write=string.tolower/resource=te
 
 可以往服务器中写入一个文件内容全为小写且文件名为test.php的文件：
 
-![](images/B87261AEB01D4EB783E513758223493F955945515fd5.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/B87261AEB01D4EB783E513758223493F955945515fd5.png)
 
 
 
@@ -293,7 +293,7 @@ payload=http://127.0.0.1/xxx.php?a=php://filter/convert.base64-encode/resource=t
 
 test.php的内容以base64编码的方式显示出来
 
-![](images/02BDE12FE4B24F0B8D0F9A0C1E51E73Ff36a6b7efc78.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/02BDE12FE4B24F0B8D0F9A0C1E51E73Ff36a6b7efc78.png)
 
 
 
@@ -322,7 +322,7 @@ echo '$aa';
 ?>
 
 
-![](images/C0329740A9B4417C83AB40C7217E125C4f31529e55fc.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/C0329740A9B4417C83AB40C7217E125C4f31529e55fc.png)
 
 php://input
 
@@ -341,7 +341,7 @@ echo file_get_contents($_GET["a"]);
 ?>  
 
 
-![](images/E85BDACB8AA945D0B4E0F433476E22C6a3146ee3ce1a.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/E85BDACB8AA945D0B4E0F433476E22C6a3146ee3ce1a.png)
 
 
 
@@ -357,7 +357,7 @@ include($test);
 
 但是在老版hackbar中可以直接被解析
 
-![](images/5BB5D5AE4EE04D5E906CBE2957E9393Ebae02b940c5c.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/5BB5D5AE4EE04D5E906CBE2957E9393Ebae02b940c5c.png)
 
 实例：
 
@@ -386,7 +386,7 @@ file_put_contents($code,"test");
 ?>  
 
 
-![](images/C2C7E2186C364FB7B4350CD5E2857DF40a34f0023185.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/C2C7E2186C364FB7B4350CD5E2857DF40a34f0023185.png)
 
 data://
 
@@ -426,7 +426,7 @@ or
 http://127.0.0.1/cmd.php?file=data:text/plain;base64,PD9waHAgcGhwaW5mbygpPz4=
 
 
-![](images/89F6536C6CB440549F4F6E7CF4956B68e46c6e152227.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/89F6536C6CB440549F4F6E7CF4956B68e46c6e152227.png)
 
 zip://, bzip2://, zlib://协议
 
@@ -462,7 +462,7 @@ zip:// [压缩文件绝对路径]#[压缩文件内的子文件名]**
 
 新建一个名为zip.txt的文件，内容为<?php phpinfo();?>，然后压缩为名为test.zip的zip文件。如果可以上传zip文件则上传zip文件，若不能则重命名为test.jpg后上传。其他几种压缩格式也可以这样操作。
 
-![](images/CC2201422350492AB08B37323791BF9D90c66d887376.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/CC2201422350492AB08B37323791BF9D90c66d887376.png)
 
 
 
@@ -470,7 +470,7 @@ zip:// [压缩文件绝对路径]#[压缩文件内的子文件名]**
 
 payload:http://127.0.0.1/xxx.php?a=zip://C:\Users\liuxianglai\Desktop\test.jpg%23zip.txt
 
-![](images/95EC6DBAD0204D4797A9F40A72B27CC14913b7389430.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/95EC6DBAD0204D4797A9F40A72B27CC14913b7389430.png)
 
 bzip2://协议
 
@@ -490,7 +490,7 @@ pyload:http://127.0.0.1/xxx.php?a=compress.bzip2://C:/Users/liuxianglai/Desktop/
 
 http://127.0.0.1/xxx.php?a=compress.bzip2://C:/Users/liuxianglai/Desktop/test.jpg
 
-![](images/7A6C8E4B931E4957B1881197A08D7F4B5d8f8d7ca051.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/7A6C8E4B931E4957B1881197A08D7F4B5d8f8d7ca051.png)
 
 zlib://协议同理
 
@@ -498,7 +498,7 @@ zlib://协议同理
 
 ---
 
-![](images/62B46E19F72944E3813C7FB349B69B6C994b78d9b1e4.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/62B46E19F72944E3813C7FB349B69B6C994b78d9b1e4.png)
 
 
 
@@ -540,13 +540,13 @@ php伪协议实现命令执行的七种姿势
 
 PHP伪协议
 
-![](images/51A7A817CBE042FB98BEAE76497EB46B26bb34f8118.jpeg)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/51A7A817CBE042FB98BEAE76497EB46B26bb34f8118.jpeg)
 
 1. 学到了
 
 forever404
 
-![](images/F3D7FD200363463AACE07F11418DFDFC76e4bd782fe.jpeg)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件包含/php伪协议/images/F3D7FD200363463AACE07F11418DFDFC76e4bd782fe.jpeg)
 
 1. Tql
 

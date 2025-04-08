@@ -1,6 +1,6 @@
 
 
-![](images/3BADA327747846B8AFA9722D957622CAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/基于DOM的漏洞/images/3BADA327747846B8AFA9722D957622CAclipboard.png)
 
 url.indexOf('http:')>-1  表示提交的参数必须含有http:
 

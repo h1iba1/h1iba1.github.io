@@ -35,7 +35,7 @@ $.ajax()
 
 
 
-![](images/6D9E0781E30047789DD1DC6432ADC27Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/基于DOM的漏洞/images/6D9E0781E30047789DD1DC6432ADC27Fclipboard.png)
 
 ```javascript
 //从url参数中获取https协议后的内容，如果内容存在则使用location.href定位到网站内容

@@ -35,11 +35,11 @@ poc:
 
 
 
-![](images/2B3899131D7F4032A752B4885523F872clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/2B3899131D7F4032A752B4885523F872clipboard.png)
 
 
 
 ## 3. burp collaborator客户端接收到file:///etc/hostname内容
 
-![](images/C5AB6C9E83864E27863535AE09B0D862clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/XXE/images/C5AB6C9E83864E27863535AE09B0D862clipboard.png)
 

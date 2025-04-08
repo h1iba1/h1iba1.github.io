@@ -31,7 +31,7 @@ TrackingId='+UNION+SELECT+CASE+WHEN+(username='administrator'
 
 
 
-![](images/CE13B0A107444E5D8C2065455F600196clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/SQL/images/CE13B0A107444E5D8C2065455F600196clipboard.png)
 
 
 

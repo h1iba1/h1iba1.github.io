@@ -18,5 +18,5 @@ payload:
 
 返回users表内容：
 
-![](images/31EB011A8BA9448F8259A6D94F54A07Dclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/SQL/images/31EB011A8BA9448F8259A6D94F54A07Dclipboard.png)
 

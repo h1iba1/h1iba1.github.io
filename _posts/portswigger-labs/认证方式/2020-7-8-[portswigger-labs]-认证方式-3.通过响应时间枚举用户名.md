@@ -12,7 +12,7 @@ https://blog.csdn.net/sinat_25449961/article/details/77374407
 
 1. 尝试枚举用户名
 
-![](images/E4D26EAAA20B4C479E1DBCDF02FBC755clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/E4D26EAAA20B4C479E1DBCDF02FBC755clipboard.png)
 
 
 
@@ -22,7 +22,7 @@ https://blog.csdn.net/sinat_25449961/article/details/77374407
 
 2. 查看返回时间枚举用户名
 
-![](images/8D01BC02DB3F472AB758E1C8DFEB0033clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/8D01BC02DB3F472AB758E1C8DFEB0033clipboard.png)
 
 因外网访问延迟原因，所以多尝试几次。发现每次尝试adserver这个用户名，返回时间都比较长。所以对其进行密码爆破
 
@@ -30,5 +30,5 @@ https://blog.csdn.net/sinat_25449961/article/details/77374407
 
 3. 密码爆破结果
 
-![](images/980F355F8CE84AB2AA19A2BB77FE0FFBclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/980F355F8CE84AB2AA19A2BB77FE0FFBclipboard.png)
 

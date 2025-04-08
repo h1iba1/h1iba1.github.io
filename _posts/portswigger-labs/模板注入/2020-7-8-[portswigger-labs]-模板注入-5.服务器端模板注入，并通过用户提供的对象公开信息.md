@@ -10,7 +10,7 @@
 
 报错：
 
-![](images/65E6A62805084FE689A8FD61DCE2359Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/模板注入/images/65E6A62805084FE689A8FD61DCE2359Bclipboard.png)
 
 此时已经说明和服务端有交互存在漏洞
 
@@ -28,7 +28,7 @@ payload:
 
 
 
-![](images/643DE0F6C9A241DF8E3C8364D3C00518clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/模板注入/images/643DE0F6C9A241DF8E3C8364D3C00518clipboard.png)
 
 
 

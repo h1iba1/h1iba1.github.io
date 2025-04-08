@@ -42,7 +42,7 @@ bp抓包：
 
 将user=1,且password=404%20
 
-![](images/D00BEA3EEEFE4A2397490E0B276B549E57-676717470.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/D00BEA3EEEFE4A2397490E0B276B549E57-676717470.png)
 
 提示我们与money=10000
 
@@ -50,7 +50,7 @@ bp抓包：
 
 同时注意到，此题用到的是PHP 5.3.5，老版本PHP了。要求我们不能输入8位字符，而输入其他任何字符都会返回you have not enough money,loser~，合理猜测一下用的是strcmp，那么直接money[]=1就可以了。
 
-![](images/8DE9E8C8ED6C483DB38D13F35D811AEB7-1421514451.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/8DE9E8C8ED6C483DB38D13F35D811AEB7-1421514451.png)
 
 
 
@@ -70,11 +70,11 @@ __EOF__
 
 好文要顶 关注我 收藏该文 
 
-![](images/DDA512C7D92C4BA6817ECF538F425831con_weibo_24.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/DDA512C7D92C4BA6817ECF538F425831con_weibo_24.png)
 
  
 
-![](images/F8F964C8D95D4056960FB26F9BB3370Awechat.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/F8F964C8D95D4056960FB26F9BB3370Awechat.png)
 
 王叹之
 

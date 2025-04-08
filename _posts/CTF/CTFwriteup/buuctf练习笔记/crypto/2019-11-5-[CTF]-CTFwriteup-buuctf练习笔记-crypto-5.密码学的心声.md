@@ -1,6 +1,6 @@
 
 
-![](images/619C9045B9CD444692FC613FFDC5197A93ffdda9-7931-4753-aee3-0c05df7bc9b5.bmp)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/crypto/images/619C9045B9CD444692FC613FFDC5197A93ffdda9-7931-4753-aee3-0c05df7bc9b5.bmp)
 
 
 

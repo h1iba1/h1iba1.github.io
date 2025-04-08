@@ -6,5 +6,5 @@
 
 该界面当用户点击click me时即可执行删除用户操作。
 
-![](images/CB9F27C43D0C4FB3913FC9506413F87Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/点击劫持/images/CB9F27C43D0C4FB3913FC9506413F87Bclipboard.png)
 

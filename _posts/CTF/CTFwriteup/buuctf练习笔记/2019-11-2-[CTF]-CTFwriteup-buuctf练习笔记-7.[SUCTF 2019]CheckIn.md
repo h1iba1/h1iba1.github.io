@@ -36,7 +36,7 @@ auto_prepend_file=a.jpg
 
 
 
-![](images/19913D06EBB94F9B86D8D7FBF08448EBclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/19913D06EBB94F9B86D8D7FBF08448EBclipboard.png)
 
 # 2.上传a.jpg
 
@@ -59,7 +59,7 @@ GIF89a
 
 则执行了a.jpg的内容
 
-![](images/96EFB2726DE04BE197E6967D9216D047clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/96EFB2726DE04BE197E6967D9216D047clipboard.png)
 
 
 

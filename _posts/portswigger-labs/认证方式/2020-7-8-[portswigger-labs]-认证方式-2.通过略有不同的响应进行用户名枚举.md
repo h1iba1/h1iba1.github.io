@@ -8,13 +8,13 @@ username or password.
 
 枚举所有用户名，查看他们是否都返回该报错提示
 
-![](images/8C3F305ED3E242D5B84B59401FAF8B60clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/8C3F305ED3E242D5B84B59401FAF8B60clipboard.png)
 
 
 
 3. 发现一个用户名不返回该报错
 
-![](images/187962CEE385405E9EAE449FB3B594A9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/187962CEE385405E9EAE449FB3B594A9clipboard.png)
 
 从而确定用户名
 
@@ -22,5 +22,5 @@ username or password.
 
 4. 爆破密码即可
 
-![](images/863EDEDEE16344AF809E9F26AF3A2CA9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/863EDEDEE16344AF809E9F26AF3A2CA9clipboard.png)
 

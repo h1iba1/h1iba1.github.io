@@ -74,7 +74,7 @@ while (1){
 
 # 3. 登陆之后发现响应头有信息
 
-![](images/2150E9FC532C469D8DACA52F5579B5EFclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2150E9FC532C469D8DACA52F5579B5EFclipboard.png)
 
 
 
@@ -84,7 +84,7 @@ while (1){
 
 # 4. 访问响应头文件得到
 
-![](images/8A77908A17E24FF7938FE3261B075A23clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/8A77908A17E24FF7938FE3261B075A23clipboard.png)
 
 
 

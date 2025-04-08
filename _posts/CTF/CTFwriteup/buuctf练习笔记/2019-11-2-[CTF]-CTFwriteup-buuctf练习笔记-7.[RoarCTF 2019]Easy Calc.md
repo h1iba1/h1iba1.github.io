@@ -8,7 +8,7 @@
 
 这里猜测是，cl=0是waf不对请求头进行处理，而后端对请求头进行了处理，造成http走私
 
-![](images/182D081363E441868818F955DA0F2A8Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/182D081363E441868818F955DA0F2A8Eclipboard.png)
 
 
 
@@ -16,7 +16,7 @@
 
 这里猜测是，waf对第一个参数请求进行了响应并报错，但是并没有终止请求把信息发送到了后端，后端处理了请求，返回了目录信息
 
-![](images/09B468E01DAA4BEA9E5C7A19F2902652clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/09B468E01DAA4BEA9E5C7A19F2902652clipboard.png)
 
 
 
@@ -24,7 +24,7 @@
 
 该题打开是一个计算器：
 
-![](images/14F5989666774D8D9460805850429AC1clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/14F5989666774D8D9460805850429AC1clipboard.png)
 
 
 
@@ -32,13 +32,13 @@
 
 ## 1.提示存在一个waf并且，将提交的参数传给calc.php处理
 
-![](images/0BCD9940A4474719904A9B8DF897BB62clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/0BCD9940A4474719904A9B8DF897BB62clipboard.png)
 
 
 
 ## 2.访问calc.php得到calc.php的源代码
 
-![](images/98C086FF1A9D4F7DA8B0CBD03C2B408Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/98C086FF1A9D4F7DA8B0CBD03C2B408Cclipboard.png)
 
 ## 3.查看源代码需要传入num参数，再由eval函数执行，但是直接传入phpinfo()；报错。多次尝试只能传入数字。所以猜测传递的参数被一个waf拦截，而且该waf只能传递数字。现在所需的就是要是绕过waf。
 
@@ -48,7 +48,7 @@
 
 
 
-![](images/E528273C284B420ABEDDDEC12966FC69clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/E528273C284B420ABEDDDEC12966FC69clipboard.png)
 
 
 
@@ -87,7 +87,7 @@ Array
 
 
 
-![](images/C459AF4222B84D3DB4A4993D88023E41clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/C459AF4222B84D3DB4A4993D88023E41clipboard.png)
 
 
 

@@ -10,7 +10,7 @@ assert()：
 
 使用sourceLeakHacker扫描发现存在git目录。
 
-![](images/26F46C4B78464D97A4E3ED6BE4E0C9A2clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/代码审计/危险函数/images/26F46C4B78464D97A4E3ED6BE4E0C9A2clipboard.png)
 
 使用gitHacker下载文件：
 
@@ -20,13 +20,13 @@ assert()：
 
 
 
-![](images/1E2211D175B447D7AEB48884E5070957clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/代码审计/危险函数/images/1E2211D175B447D7AEB48884E5070957clipboard.png)
 
 
 
 下载网页源码，进入flag.php发现，没有flag。此时代码审计
 
-![](images/A250AE466F09420DB9C2326A68BEFDF7clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/代码审计/危险函数/images/A250AE466F09420DB9C2326A68BEFDF7clipboard.png)
 
 发现存在assert()函数，推测是任意代码执行。
 

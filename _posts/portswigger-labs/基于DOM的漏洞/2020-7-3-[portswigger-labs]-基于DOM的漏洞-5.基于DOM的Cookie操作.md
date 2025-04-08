@@ -1,12 +1,12 @@
 
 
-![](images/0E4E58996B544A9EBE3FDD350ABB89EFclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/基于DOM的漏洞/images/0E4E58996B544A9EBE3FDD350ABB89EFclipboard.png)
 
 首页的js脚本，将url地址获取的值存入cookie，可能造成危害
 
 
 
-![](images/5FB4AC813573452889D61B47DE53E955clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/基于DOM的漏洞/images/5FB4AC813573452889D61B47DE53E955clipboard.png)
 
 last viewed product按钮存在xss漏洞
 

@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
 3.shrine路由下尝试模板注入
 
-![](images/5FB53FC720F344DCA88FFAD39542EEB4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/5FB53FC720F344DCA88FFAD39542EEB4clipboard.png)
 
 确定存在模板注入
 
@@ -101,7 +101,7 @@ https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_forbaobaoer.cn/archive
 
 我们注入{url_for.__globals__}得到
 
-![](images/17A2A8EA40014B25A2793D34B008B69384-421565028.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/17A2A8EA40014B25A2793D34B008B69384-421565028.png)
 
  
 
@@ -111,7 +111,7 @@ https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_forbaobaoer.cn/archive
 
 {url_for.__globals__['current_app'].config}
 
-![](images/CEB4E60659EC4EEF95845826BA2ABB482-1559116334.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/CEB4E60659EC4EEF95845826BA2ABB482-1559116334.png)
 
  
 
@@ -141,5 +141,5 @@ get_flashed_messages注入的方法同理
 
 
 
-![](images/4813E2001F9A4F2A829A60A2C1E31C4Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/4813E2001F9A4F2A829A60A2C1E31C4Eclipboard.png)
 

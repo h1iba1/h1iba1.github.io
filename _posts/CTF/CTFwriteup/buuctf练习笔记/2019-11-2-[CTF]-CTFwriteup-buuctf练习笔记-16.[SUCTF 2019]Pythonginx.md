@@ -45,7 +45,7 @@ def getUrl():
 
 列如：[HCTF 2018]admin
 
-![](images/3A11349FB68A4C72A829020D5970B8E5clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/3A11349FB68A4C72A829020D5970B8E5clipboard.png)
 
 # 3.可以利用ℂ来替换.cc中的从c，在最后出来后会恢复成c,也就成功绕过了if判断，阔以修改个源码用来测试
 
@@ -95,7 +95,7 @@ else:
 
 
 
-![](images/B9F8712957644327A83F42E1C6F3C27Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/B9F8712957644327A83F42E1C6F3C27Fclipboard.png)
 
 
 
@@ -112,7 +112,7 @@ print(urllib.parse.quote(url.encode('utf-8', 'replace')))
 
 # 5. 访问读取到/etc/passwd文件
 
-![](images/46AFBF88A9E249FD81FBF23B782D0708clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/46AFBF88A9E249FD81FBF23B782D0708clipboard.png)
 
 
 
@@ -134,7 +134,7 @@ print(urllib.parse.quote(url.encode('utf-8', 'replace')))
 
 - /usr/local/nginx/conf/nginx.con
 
-![](images/FF01B658250E4CE1B6109D0181B56DDAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/FF01B658250E4CE1B6109D0181B56DDAclipboard.png)
 
 知道flag文件位置读取
 
@@ -142,7 +142,7 @@ print(urllib.parse.quote(url.encode('utf-8', 'replace')))
 
 # 7.读取/user/flllllag
 
-![](images/915B3E0E49FD491995D620ECE98CDB17clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/915B3E0E49FD491995D620ECE98CDB17clipboard.png)
 
 
 
@@ -190,5 +190,5 @@ if __name__=="__main__":
 
 
 
-![](images/B94701942DF14490A39EBEB607217137clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/B94701942DF14490A39EBEB607217137clipboard.png)
 

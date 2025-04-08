@@ -1,6 +1,6 @@
 
 
-![](images/A6FA99684776467B8D8D66D89C9F6F58clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/基于DOM的漏洞/images/A6FA99684776467B8D8D66D89C9F6F58clipboard.png)
 
 
 

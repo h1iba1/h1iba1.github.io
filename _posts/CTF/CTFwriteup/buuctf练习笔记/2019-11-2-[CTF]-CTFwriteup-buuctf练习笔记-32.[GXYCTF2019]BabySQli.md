@@ -12,11 +12,11 @@
 
 select * from admin1 where username='a'union select null,null,null;
 
-![](images/E2C1F8F0EF9840E8BD1A25994473772Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/E2C1F8F0EF9840E8BD1A25994473772Bclipboard.png)
 
 select * from admin1 where username='a'union select null,'admin','123';
 
-![](images/B7437672E79A4CFD88F2B7B38452DE4Fclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/B7437672E79A4CFD88F2B7B38452DE4Fclipboard.png)
 
 当把null替换为字符串，联合查询就会将替换的字符串查询出来
 
@@ -58,7 +58,7 @@ a'union select null,null,null--+
 
 
 
-![](images/DC5FFFAFDF64449C815E737676477EC7clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/DC5FFFAFDF64449C815E737676477EC7clipboard.png)
 
 提示usrname错误，尝试是否有回显，发现过滤了括号()
 
@@ -99,7 +99,7 @@ password:202cb962ac59075b964b07152d234b70
 
 此时即可登陆成功得到flag
 
-![](images/F911556B559243D3805D10908BEB30F3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/F911556B559243D3805D10908BEB30F3clipboard.png)
 
 
 

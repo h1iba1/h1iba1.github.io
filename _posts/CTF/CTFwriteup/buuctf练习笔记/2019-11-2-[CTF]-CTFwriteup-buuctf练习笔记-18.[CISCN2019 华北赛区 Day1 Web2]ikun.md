@@ -10,7 +10,7 @@
 
 1.提示需要冲到lv6
 
-![](images/377E6D4797724192A3C72F971257F2FBclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/377E6D4797724192A3C72F971257F2FBclipboard.png)
 
 
 
@@ -20,7 +20,7 @@
 
 因为网页中的会员等级在网页中是等级对应的图片，所以爆破脚本只需要不断获取lv6.png即可
 
-![](images/662F526C83D0477CB6296F114D974E16clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/662F526C83D0477CB6296F114D974E16clipboard.png)
 
 ```javascript
 import requests
@@ -41,13 +41,13 @@ for i in range(0,500):
 
 最终在181页发现lv6
 
-![](images/6C9B9966ACB64C62B488EFD6D3124BBAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6C9B9966ACB64C62B488EFD6D3124BBAclipboard.png)
 
 3.购买会员，但是发现钱不够，抓包发现可以任意更改折扣
 
 
 
-![](images/14AE3A5D5D2043E69784725B0A2F8AA3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/14AE3A5D5D2043E69784725B0A2F8AA3clipboard.png)
 
 当折扣改的足够小时，会发生302跳转，
 
@@ -61,7 +61,7 @@ for i in range(0,500):
 
 https://zhuanlan.zhihu.com/p/71672282
 
-![](images/2A4574A1FBA34C129EF88E3AFCDD200Dclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/2A4574A1FBA34C129EF88E3AFCDD200Dclipboard.png)
 
 
 
@@ -79,7 +79,7 @@ make
 
 
 
-![](images/04F1AB806ADB4CD387AC8B6EEE922D93clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/04F1AB806ADB4CD387AC8B6EEE922D93clipboard.png)
 
 
 
@@ -87,7 +87,7 @@ make
 
 https://jwt.io/
 
-![](images/8CAD6703FAFB41CEBA55A5B1C924AA01clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/8CAD6703FAFB41CEBA55A5B1C924AA01clipboard.png)
 
 
 
@@ -95,7 +95,7 @@ https://jwt.io/
 
 发现网站的源码
 
-![](images/AF13434ECD864B799C9C011C8E717DA5clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/AF13434ECD864B799C9C011C8E717DA5clipboard.png)
 
 
 
@@ -147,9 +147,9 @@ print a
 
 9. 抓包发送payload
 
-![](images/720FB7F8333A494887F7CF9DDE6D1C70clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/720FB7F8333A494887F7CF9DDE6D1C70clipboard.png)
 
 
 
-![](images/58E3D562260A47AEB35615F4445B9DA0clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/58E3D562260A47AEB35615F4445B9DA0clipboard.png)
 

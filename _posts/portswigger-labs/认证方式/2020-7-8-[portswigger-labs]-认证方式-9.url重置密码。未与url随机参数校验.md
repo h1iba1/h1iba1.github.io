@@ -10,6 +10,6 @@
 
 删除url中的token参数。和post中的参数。将username改为carlos。发送请求。发现密码更改成功。
 
-![](images/307BFF6473BC450C8A10AE8B14CE7ABCclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/307BFF6473BC450C8A10AE8B14CE7ABCclipboard.png)
 
 这是因为服务端没有验证重置链接，也没有将用户和重置链接绑定在一起。

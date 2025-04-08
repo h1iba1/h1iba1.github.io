@@ -8,7 +8,7 @@ payload:
 
 admin'and+updatexml(1,concat(0x7e,database(),0x7e),1)--+
 
-![](images/1B3FA4DDCFD044CD8909017AD6561290clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/1B3FA4DDCFD044CD8909017AD6561290clipboard.png)
 
 
 

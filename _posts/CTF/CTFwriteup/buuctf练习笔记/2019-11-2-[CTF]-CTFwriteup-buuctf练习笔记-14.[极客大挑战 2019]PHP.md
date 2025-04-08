@@ -94,7 +94,7 @@ s:77:"O:4:"Name":2:{s:14:" Name username";s:5:"admin";s:14:" Name password";i:10
 
 不同属性序列化时有些许差异：
 
-![](images/BD8467E79741464FAE0E0468022087B1clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/BD8467E79741464FAE0E0468022087B1clipboard.png)
 
 
 
@@ -110,7 +110,7 @@ s:77:"O:4:"Name":2:{s:14:" Name username";s:5:"admin";s:14:" Name password";i:10
 
 # 6. 将payload url编码即可
 
-![](images/470E4B5B1DBE4AE7A3AE85F6AB1879CFclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/470E4B5B1DBE4AE7A3AE85F6AB1879CFclipboard.png)
 
 
 

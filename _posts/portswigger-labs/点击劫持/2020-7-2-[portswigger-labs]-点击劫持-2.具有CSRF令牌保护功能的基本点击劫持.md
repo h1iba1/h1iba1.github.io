@@ -33,5 +33,5 @@ poc:
 
 将该脚本放置到恶意网站上，诱使用户再登陆受害网站时，访问该页面，用户只要点击了页面上的引诱性的小游戏，即可实现点击劫持。
 
-![](images/7FE7B296A17B48D8B6286388EE1961A3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/点击劫持/images/7FE7B296A17B48D8B6286388EE1961A3clipboard.png)
 

@@ -10,7 +10,7 @@
 
 fuzz测试：
 
-![](images/894A939E68504EB5ADD80D051B0D61CBfinalsql1.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/894A939E68504EB5ADD80D051B0D61CBfinalsql1.png)
 
 1. 发现and，union，空格都被过滤
 
@@ -26,7 +26,7 @@ fuzz测试：
 
 
 
-![](images/A0D99A12EA394D59B096BFCC1FCBEEAFfinalsql2.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/A0D99A12EA394D59B096BFCC1FCBEEAFfinalsql2.png)
 
 
 
@@ -40,7 +40,7 @@ payload:
 
 
 
-![](images/4641DF6F0FC54D299F14E3ED01E91AEBfinalsql3.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/4641DF6F0FC54D299F14E3ED01E91AEBfinalsql3.png)
 
 说明此时数据库名第一位ascii为103，为g。和前面的sql注入一样
 

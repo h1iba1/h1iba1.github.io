@@ -6,14 +6,14 @@
 
 ### 1.上传测试，发现jpg,gif,php文件都无法上传，但是png图片可以
 
-![image](images/1100F0A791814AF5AF9C49D6AD7DB7E6你有特洛伊么1.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/1100F0A791814AF5AF9C49D6AD7DB7E6你有特洛伊么1.png)
 
 但是不知道上传路径，尝试upload/68.png,可以访问，那现在就确定了文件上传路径
 
 ### 2.构造木马
 在图片数据中添加`<?php phpinfo();?>`
 
-![image](images/A04EB9C8E74D416E8F4D1B9AEEA8F934你有特洛伊么2.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/A04EB9C8E74D416E8F4D1B9AEEA8F934你有特洛伊么2.png)
 
 发现检测到了<?。尝试php文件的另一种写法：
 
@@ -23,7 +23,7 @@ phpinfo();
 </script>
 ```
 
-![image](images/A09FB82C121241BE9D828DC12EE98A26你有特洛伊么3.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/A09FB82C121241BE9D828DC12EE98A26你有特洛伊么3.png)
 
 上传成功。
 
@@ -37,4 +37,4 @@ php3,php5等接被过滤，后尝试phtml，可以上传。
 
 在根目录找到flag
 
-![image](images/72202EA3418D416BB12939EAB23AA3AD你有特洛伊么4.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/第十届极客大赛（成信大）/images/72202EA3418D416BB12939EAB23AA3AD你有特洛伊么4.png)

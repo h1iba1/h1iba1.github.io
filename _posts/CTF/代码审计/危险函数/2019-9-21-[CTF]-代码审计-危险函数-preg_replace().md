@@ -1,6 +1,6 @@
 ## preg_replace():
 
-![](images/D4D6814D9CC04692B9B2283CA267BF70clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/代码审计/危险函数/images/D4D6814D9CC04692B9B2283CA267BF70clipboard.png)
 
 
 

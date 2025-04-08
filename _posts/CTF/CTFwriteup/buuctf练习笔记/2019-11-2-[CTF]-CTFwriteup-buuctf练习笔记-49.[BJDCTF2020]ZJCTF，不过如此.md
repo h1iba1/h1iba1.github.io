@@ -54,7 +54,7 @@ get:
 
 得到next.php的源码：
 
-![](images/0822C02484FA4C07861FE2259A92A945clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/0822C02484FA4C07861FE2259A92A945clipboard.png)
 
 
 
@@ -99,7 +99,7 @@ payload:
 
 
 
-![](images/4B66A5A6EC544EF4A3C684FBE5AD3741clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/4B66A5A6EC544EF4A3C684FBE5AD3741clipboard.png)
 
 
 
@@ -115,7 +115,7 @@ payload:
 
 
 
-![](images/970505B5B99549B58E625645CE63749Bclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/970505B5B99549B58E625645CE63749Bclipboard.png)
 
 
 

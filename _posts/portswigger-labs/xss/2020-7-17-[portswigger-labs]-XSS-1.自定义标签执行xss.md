@@ -20,7 +20,7 @@ https://www.example.com/index.html#id
 
 例如: 
 
-![](images/6402AB7EB2F041D0AA0C47C47F7771EAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/6402AB7EB2F041D0AA0C47C47F7771EAclipboard.png)
 
 
 
@@ -38,13 +38,13 @@ https://www.example.com/index.html#id
 
 正如前言所述的情况, 页面运行写入自定义的(非html)标签:
 
-![](images/B31EE73D00DE40B49D461CB8ECC3F53Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/B31EE73D00DE40B49D461CB8ECC3F53Eclipboard.png)
 
 
 
 于是熟练的配合xss打出一个payload?
 
-![](images/2C7BB9E1D32E42F290CB170F9A018020clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/2C7BB9E1D32E42F290CB170F9A018020clipboard.png)
 
 
 
@@ -90,7 +90,7 @@ https://www.example.com/index.html#id
 
 了解了tabindex的功能之后, 这里就加入tabindex属性配合#符号来使得自定义标签获得焦点:
 
-![](images/BB8031CF367B44CA96940D907B4E3AD5clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/BB8031CF367B44CA96940D907B4E3AD5clipboard.png)
 
 
 

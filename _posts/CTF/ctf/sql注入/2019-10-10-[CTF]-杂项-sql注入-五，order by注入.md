@@ -8,7 +8,7 @@ select * from admin1 order by id;
 
 
 
-![](images/A11181E0C41143A590158D6D8767BD5Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入/images/A11181E0C41143A590158D6D8767BD5Cclipboard.png)
 
 默认是降序排列。
 
@@ -28,7 +28,7 @@ select * from admin1 order by IF(1=2,id,username) ;
 
 
 
-![](images/A19FCDCC32CF4A5987E98B388337EF2Eclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入/images/A19FCDCC32CF4A5987E98B388337EF2Eclipboard.png)
 
 
 
@@ -38,7 +38,7 @@ select * from admin1 order by IF(1=2,id,username) ;
 
 
 
-![](images/B2FE0960EED74AACA66ABF603062B6B9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入/images/B2FE0960EED74AACA66ABF603062B6B9clipboard.png)
 
 
 
@@ -50,7 +50,7 @@ select * from admin1 order by (select 1 regexp if(substring(user(),1,1)='r',1,0x
 
 
 
-![](images/58938AC0504C41A593D005D64B461E19clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入/images/58938AC0504C41A593D005D64B461E19clipboard.png)
 
 
 
@@ -62,7 +62,7 @@ select * from admin1 order by (select 1 regexp if(substring(user(),1,1)='1',1,0x
 
 
 
-![](images/CCFB65E577E94523BE83A06CE492DD26clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入/images/CCFB65E577E94523BE83A06CE492DD26clipboard.png)
 
 猜解数据库表名；
 
@@ -82,7 +82,7 @@ select * from admin1 order by (select 1 regexp if(substring(user(),1,1)='1',1,0x
 
 1.2 (case when (1) then id else username end) 
 
-![](images/93529A083A344D37A440094BA211D6D8clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入/images/93529A083A344D37A440094BA211D6D8clipboard.png)
 
 
 
@@ -92,5 +92,5 @@ select * from admin1 order by (select 1 regexp if(substring(user(),1,1)='1',1,0x
 
 
 
-![](images/F6A753A4CE76463BB37ED2AF4880D94Dclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入/images/F6A753A4CE76463BB37ED2AF4880D94Dclipboard.png)
 

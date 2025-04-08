@@ -6,7 +6,7 @@
 
 只要存在主域，就可以绕过
 
-![](images/0920CBDDB3624FBB9BEC0F21D34EE30Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/csrf/images/0920CBDDB3624FBB9BEC0F21D34EE30Cclipboard.png)
 
 此时可以使用javascript代码来自动为referer头添加内容
 

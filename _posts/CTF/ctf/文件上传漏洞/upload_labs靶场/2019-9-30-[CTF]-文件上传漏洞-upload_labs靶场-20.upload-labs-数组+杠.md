@@ -50,9 +50,9 @@ $allow_suffix = array('jpg','png','gif');
 
 ## 文件上传成功：
 
-![](images/BADB0EAA996F4022859F616ECF28F893clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/BADB0EAA996F4022859F616ECF28F893clipboard.png)
 
 ## 直接访问：
 
-![](images/CF0F2C3DF17D4125BEB4283C0E9E07ECclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/文件上传漏洞/upload_labs靶场/images/CF0F2C3DF17D4125BEB4283C0E9E07ECclipboard.png)
 

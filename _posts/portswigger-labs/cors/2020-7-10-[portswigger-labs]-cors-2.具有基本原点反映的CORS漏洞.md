@@ -1,14 +1,14 @@
 
 
-![](images/9CFC99DC38A54F39BC2ECD178E451FE9clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/cors/images/9CFC99DC38A54F39BC2ECD178E451FE9clipboard.png)
 
 首页会显示用户的api密码（在实际渗透中可以是个人敏感信息，csrf令牌....)
 
-![](images/948B366CE323426C9421A6132E6FD0DBclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/cors/images/948B366CE323426C9421A6132E6FD0DBclipboard.png)
 
 观察到api密钥是通过一个ajax接口返回到页面。直接访问接口，并将请求来源跟改为任意网站可以获取到密钥，说明存在cors漏洞
 
-![](images/06241A7E81BD4BD8B925AAE265C88854clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/cors/images/06241A7E81BD4BD8B925AAE265C88854clipboard.png)
 
 
 
@@ -33,5 +33,5 @@ poc:
 
 在访问记录中，发现被记录的api密钥，提交即可
 
-![](images/F06ACBB3ADF14BAD893C6A473FEDEE1Dclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/cors/images/F06ACBB3ADF14BAD893C6A473FEDEE1Dclipboard.png)
 

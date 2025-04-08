@@ -6,7 +6,7 @@ http://127.0.0.1/sql-labs/Less-5/?id=1'and'1'='1
 
 
 
-![](images/70AC56255F414DBF88FE57B86D995A0Aclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/70AC56255F414DBF88FE57B86D995A0Aclipboard.png)
 
 
 
@@ -16,7 +16,7 @@ http://127.0.0.1/sql-labs/Less-5/?id=1'and'1'='2
 
 
 
-![](images/67D4A60B5F4944398D652013C3D39362clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/67D4A60B5F4944398D652013C3D39362clipboard.png)
 
 
 
@@ -59,5 +59,5 @@ updatexml(1,concat(0x7e,(SELECT @@version),0x7e),1)--+
 
 
 
-![](images/481B0007D70845F48D7F6A6CCA0F2BACclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/ctf/sql注入深度剖析/sqli_labs通关/basic_challenges（基础挑战）/images/481B0007D70845F48D7F6A6CCA0F2BACclipboard.png)
 

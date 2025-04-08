@@ -27,7 +27,7 @@ window.addEventListener('message', function(e){
 
 
 
-![](images/D361339E4C9A4F7684FBE90E21F2AD47clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/基于DOM的漏洞/images/D361339E4C9A4F7684FBE90E21F2AD47clipboard.png)
 
 发现网站首页存在一个web消息监听器，并且会将监听到的内容发送到页面。这很可能造成xss漏洞
 

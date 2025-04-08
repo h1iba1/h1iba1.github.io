@@ -2,7 +2,7 @@ self_xss的一种高危利用方式
 
 提交反馈页面存在self_xss，可以通过控制url来决定页面输入值
 
-![](images/06708061DBED4D7A8CDA7C1BC82BB8B0clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/点击劫持/images/06708061DBED4D7A8CDA7C1BC82BB8B0clipboard.png)
 
 
 

@@ -1,6 +1,6 @@
 2018年3月26日tp进行了一次安全更新。
 
-![1.1](/Users/h11ba1/Desktop/markdown/博客/thinkphp框架学习/think5.0,5.1sql注入分析/1.1.png)
+![1.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/漏洞分析/thinkphp框架学习/Thinkphp5.0.15SQL注入漏洞挖掘分析/1.1.png)
 
 本次更新大佬们立马找到了漏洞点并给出了paylaod：
 
@@ -18,7 +18,7 @@ public/index.php/index/index/?username[0]=inc&username[1]=updatexml(1,concat(0x7
 
 
 
-![1.2](1.2.png)
+![1.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/漏洞分析/thinkphp框架学习/Thinkphp5.0.15SQL注入漏洞挖掘分析/1.2.png)
 
 ```php
 case 'inc':
@@ -29,7 +29,7 @@ case 'inc':
 
 ```php
 case 'inc':
-       if ($key == $val[1]) {	                        
+       if ($key == $val[1]) {
            $result[$item] = $item . '+' . floatval($val[2]);
        }
 ```
@@ -43,7 +43,7 @@ case 'inc':
 ### Inc,dec,exp函数解析：
 可以参考官方文档：
 
-![1.3](/Users/h11ba1/Desktop/markdown/博客/thinkphp框架学习/think5.0,5.1sql注入分析/1.3.png)
+![1.3](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/漏洞分析/thinkphp框架学习/Thinkphp5.0.15SQL注入漏洞挖掘分析/1.3.png)
 
 这三个方法主要用在sql链式操作。
 
@@ -80,7 +80,7 @@ Db::table('data')
 
 根据官方的更新判断出本次更新和sql注入有关，涉及的函数为`parseData()`全局搜索用到该函数的地方：
 
-![2.1](/Users/h11ba1/Desktop/markdown/博客/thinkphp框架学习/think5.0,5.1sql注入分析/2.1.png)
+![2.1](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/漏洞分析/thinkphp框架学习/Thinkphp5.0.15SQL注入漏洞挖掘分析/2.1.png)
 
 
 
@@ -135,15 +135,15 @@ public function insert(array $data = [], $replace = false, $getLastInsID = false
         // 分析查询表达式
         $options = $this->parseExpress();
         $data    = array_merge($options['data'], $data);
-        
-  
+
+
   			/****************重点**************/
   			//将获取到的data数组，用builder类的insert方法处理生成sql语句
-     
+
   			// 生成SQL语句
         $sql = $this->builder->insert($data, $options, $replace);
-  
-  
+
+
         // 获取参数绑定
         $bind = $this->getBind();
         if ($options['fetch_sql']) {
@@ -180,7 +180,7 @@ tp的insert方法会将得到数组数据放入builder类的insert方法生成sq
 
 ### builder类的insert()方法则调用了parseDate()函数：
 
-![2.2](2.2.png)
+![2.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/漏洞分析/thinkphp框架学习/Thinkphp5.0.15SQL注入漏洞挖掘分析/2.2.png)
 
 所以确定输入点为tp框架的insert方法。
 
@@ -237,7 +237,7 @@ parseDate函数处理数组[0]=dec或inc时：会将数组[1]和数组[2]拼接
                     throw new Exception('fields not exists:[' . $key . ']');
                 }
             } elseif (is_null($val)) {
-              
+
               $result[$item] = 'NULL';
 
                 /***************重点***************/
@@ -312,7 +312,7 @@ class Register extends Controller{
         $view = new View();
         return $view->fetch('index');
     }
-    
+
     public function register(){
         //实例化User
         $user = new Users();
@@ -380,7 +380,7 @@ $user->username = input('post.username/a');
 
 /a修饰符官方解释：
 
-![3.2](3.2.png)
+![3.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/漏洞分析/thinkphp框架学习/Thinkphp5.0.15SQL注入漏洞挖掘分析/3.2.png)
 
 添加/a尝试提交数据注入尝试：
 
@@ -388,7 +388,7 @@ $user->username = input('post.username/a');
 
 ### 直接对注册接口提交payload
 
-![3.2](3.3.png)
+![3.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/漏洞分析/thinkphp框架学习/Thinkphp5.0.15SQL注入漏洞挖掘分析/3.3.png)
 
 
 
@@ -410,5 +410,5 @@ http://127.0.0.1:8888/tp5.0.1/public/index.php/index/index/?username[0]=inc&user
 
 输入的val[1]必须和字段值相等才会进行拼接，字段值不可能为paylaod:updatexml(0x7e,user(),0x7e);等注入语句，也就修复了注入问题。
 
-![4.2](4.2.png)
+![4.2](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/漏洞分析/thinkphp框架学习/Thinkphp5.0.15SQL注入漏洞挖掘分析/4.2.png)
 

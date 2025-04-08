@@ -1,6 +1,6 @@
 # 1.f12查看看到一个source.php
 
-![](images/6B22815557A34894BFFA8EB3DCFB83F4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/6B22815557A34894BFFA8EB3DCFB83F4clipboard.png)
 
 
 

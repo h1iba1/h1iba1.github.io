@@ -8,7 +8,7 @@
 
 在跳转到/login2处抓包，将用户名改为carlos。（此处是为了使服务器发送carlos的验证码，以为使carlos用户在操作）
 
-![](images/1BB98C605BF744698CEEDB5D25EBC9E4clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/1BB98C605BF744698CEEDB5D25EBC9E4clipboard.png)
 
 
 
@@ -16,18 +16,18 @@
 
 将用户名更改为carlos.并准备爆破验证码
 
-![](images/F9E94E9961F345F9B236C56679C24CFDclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/F9E94E9961F345F9B236C56679C24CFDclipboard.png)
 
 
 
 3. 爆破成功。状态吗为302.
 
-![](images/F44D9C7C0B024737AC3B882EBDCA4A2Cclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/F44D9C7C0B024737AC3B882EBDCA4A2Cclipboard.png)
 
 
 
 4.此时因为有csrftoken的存在不能直接使用验证码去登陆。而因该在响应模块中用浏览器打开。
 
-![](images/256835CA552A46BA8959A7A512C01D5Aclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/认证方式/images/256835CA552A46BA8959A7A512C01D5Aclipboard.png)
 
 访问链接，到carlos账户的myaccout界面即可

@@ -62,7 +62,7 @@ payload:`?code=$a='php'.'info';$a();&useful=index.php`
 
 ### 3.得到phpinfo界面查看禁用函数
 
-![image](images/34FBDCE7626146C8AC342250C2727D73hacker_backdoor1.png)
+![image](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/南邮ctf2019/images/34FBDCE7626146C8AC342250C2727D73hacker_backdoor1.png)
 
 rce函数基本都被禁用了，但是发现proc_open还可以用
 

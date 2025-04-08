@@ -8,9 +8,9 @@
 
 直接打开是一个word文档
 
-![](images/31C7854F0A5C41DD9E81264E185B54E3clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/crypto/images/31C7854F0A5C41DD9E81264E185B54E3clipboard.png)
 
 里面的为jsfuck编码：直接浏览器console执行即可得到flag
 
-![](images/C9B61A4D62144BDFA30FC753371BBABDclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/crypto/images/C9B61A4D62144BDFA30FC753371BBABDclipboard.png)
 

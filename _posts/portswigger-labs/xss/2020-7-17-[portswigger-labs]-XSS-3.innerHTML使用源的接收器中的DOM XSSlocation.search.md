@@ -29,7 +29,7 @@ function changeLink(){
 
 
 
-![](images/5C71EC6BC4C040ECA6FD9169507A07CAclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/portswigger-labs/xss/images/5C71EC6BC4C040ECA6FD9169507A07CAclipboard.png)
 
 js代码会将url中的search参数交给innerHTML属性去执行
 

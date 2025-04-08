@@ -16,7 +16,7 @@ https://xz.aliyun.com/t/5505
 
 1.测试过滤
 
-![](images/5460D9503C7A4D0B99BAA80EC5DC62E1clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/5460D9503C7A4D0B99BAA80EC5DC62E1clipboard.png)
 
 union和union/**/sekect被过滤了，不能使用联结查询
 
@@ -37,7 +37,7 @@ username=admin&password=pass'^updatexml(1,concat(0x7e,(select(database()))
 
 
 
-![](images/5B62E7AEEB2C40AB8A39B639FB1D8EDCclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/5B62E7AEEB2C40AB8A39B639FB1D8EDCclipboard.png)
 
 
 

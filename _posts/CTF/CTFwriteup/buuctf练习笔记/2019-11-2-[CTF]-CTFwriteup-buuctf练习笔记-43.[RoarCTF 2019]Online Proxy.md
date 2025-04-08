@@ -26,7 +26,7 @@ X-Forwarded-For: 1'or'1
 
 
 
-![](images/7FB12F046C5244E891033FFFF46CDCECclipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/7FB12F046C5244E891033FFFF46CDCECclipboard.png)
 
 current ip显示输入的1'or'1
 
@@ -40,7 +40,7 @@ X-Forwarded-For: 2
 
 
 
-![](images/AF5B8882AB014B80AEE295E9A0214499clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/AF5B8882AB014B80AEE295E9A0214499clipboard.png)
 
 current ip：
 
@@ -56,7 +56,7 @@ X-Forwarded-For: 2
 
 
 
-![](images/E6E8217FFE4A40EBA04E11FEF583EA51clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/E6E8217FFE4A40EBA04E11FEF583EA51clipboard.png)
 
 此时说明存在sql注入，输入的1'or'1被查询，返回了1
 
@@ -100,7 +100,7 @@ X-Forwarded-For: 0
 
 
 
-![](images/57968C32012B42C9934F87844A6F3934clipboard.png)
+![](https://raw.githubusercontent.com/h1iba1/h1iba1.github.io/refs/heads/master/_posts/CTF/CTFwriteup/buuctf练习笔记/images/57968C32012B42C9934F87844A6F3934clipboard.png)
 
 返回1说明version>5返回1
 
